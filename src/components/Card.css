@@ -1,0 +1,70 @@
+.card__header {
+    background-color: #e87ca8;
+    color: #fff;
+    width: fit-content;
+    position: relative;
+    padding: 0 2% 0 2%;
+}
+
+.card__header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    height: 0;
+    border-top: clamp(1em, 9vw, 1.2em) solid transparent;
+    border-bottom: clamp(0.2em, 5.5vw, 1.5em) solid transparent;
+    border-left: 1.3em solid #e87ca8;
+}
+
+.card__header h2 {
+    font-weight: 200;
+    font-family: "IBM Plex Serif", serif;
+    font-size: clamp(1.2em, 6vw, 1.4em);
+    padding: 2% 0 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cake-informations {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cake-informations h3 {
+    font-family: "Great Vibes", cursive;
+    color: #B2878C;
+    font-size: 2em;
+    text-align: center;
+}
+
+.cake-informations p {
+    text-align: center;
+    color: #B2878C;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.heart {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+
+.lista {
+    list-style: none;
+    background-color: #FFD8E5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: clamp(1em, 5vw, 1.1em);
+    color: #B2878C;
+    font-weight: 700;
+    margin: 20px 5%;
+}
+
+.lista li {
+  display: grid;
+  grid-template-columns: 2fr 0.7fr; 
+}
