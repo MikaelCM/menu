@@ -8,7 +8,7 @@
 }
 
 .link_whatsapp, .link_instagram {
-    background-color: #FDAEC1;
+    background-color: #ffc1cd;
     border-radius: 30px;
     font-size: 1.25em;
     padding: 12px 2.6em;
@@ -51,7 +51,7 @@
 }
 
 .mixer_paragraph {
-    background-color: #FFD8E1;
+    background-color: #FFD7DF;
     font-size: clamp(0.6em, 3vw, 1em);
     display: flex;
     justify-content: end;
@@ -60,7 +60,7 @@
     color: #B2878C;
 }
 
-.first-page__title {
+.menu__title {
     background-color: #FDAEC1;
     color: #fff;
     font-size: 1.2em;
@@ -72,7 +72,7 @@
     font-family: "IBM Plex Serif", serif;
 }
 
-.first-page__title h1 {
+.menu__title h1 {
     font-weight: 200;
     opacity: 1;
     margin: 50px 0 50px;
@@ -86,4 +86,10 @@
     position: relative;
     bottom: 6px;
     right: 5px;
+}
+
+.masses-section {
+    background: url('./background_masses.png');
+    background-size: 24em;
+    background-position: 11em;
 }

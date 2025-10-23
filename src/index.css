@@ -11,7 +11,7 @@ body, html {
 
     background: url('background.png');
     min-height: 100dvh;
-    color-scheme: light only;
+    color-scheme: light;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,3 +23,4 @@ section {
 a {
     color: #fff;
 }
+

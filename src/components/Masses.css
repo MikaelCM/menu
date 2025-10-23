@@ -1,0 +1,90 @@
+.massas__card {
+    color: #fff;
+}
+
+.massas__container {
+    display: flex;
+    align-items: center;
+}
+
+.massas__header {
+    height: 2em;
+}
+
+.massas__title {
+    font-family: "Playfair Display", serif;
+    font-size:  clamp(0.84em, 4.2vw, 0.98em);
+    height: 2em;
+    padding: 4px 50px 4px 40px;
+    display: flex;
+    align-items: center;
+    color: #B2878C;
+    background-color: #E2F1F8;
+}
+
+.massas__triangle {
+    border-top: 1.2em solid transparent;
+    border-bottom: 1.3em solid transparent;
+    border-left: 1.5em solid #E2F1F8;
+    flex-shrink: 0;
+}
+
+.flavours__container {
+    background-color: #E2F1F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    margin: 50px 12% 30px;
+    border-radius: 12px;
+    padding: 50px 0 100px;
+    position: relative;
+}
+
+.masses__image, .masses__image2, .masses__fixed-image {
+    position: absolute;
+}
+
+.masses__image img, .masses__image2 img, .masses__fixed-image img {
+    width: 100%;
+}
+
+.masses__image {
+    right: -15px;
+    top: -15px;
+    width: 50px;
+}
+
+.masses__image2 {
+    left: -15px;
+    bottom: -10px;
+    width: 55px;
+    z-index: 1;
+}
+
+.masses__fixed-image {
+    width: 110px;
+    bottom: 0;
+    left: 0;
+}
+
+.flavours {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.massas-flavours {
+    color: #B2878C;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.flavours__heart {
+    font-size: 0.5em;
+    color: #FFD7DF;
+}

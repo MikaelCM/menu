@@ -1,0 +1,51 @@
+.recheios__header {
+    display: flex;
+    align-items: center;
+}
+
+.recheios__title {
+    font-family: "Playfair Display", serif;
+    font-size:  clamp(0.8em, 4vw, 0.9em);
+    height: 2em;
+    padding: 6px 15px 6px 10px;
+    display: flex;
+    align-items: center;
+    color: #B2878C;
+    background-color: #FFD7DF;
+}
+
+.recheios__triangle {
+    border-top: 1.3em solid transparent;
+    border-bottom: 1.3em solid transparent;
+    border-left: 1.5em solid #FFD7DF;
+    flex-shrink: 0;
+}
+
+.recheios__container {
+    background-color: #FFD7DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 30px 0;
+    color: #B2878C;
+    border-radius: 5px;
+}
+
+.recheios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+
+.recheios__lista {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.recheios__heart {
+    font-size: 0.4em;
+}

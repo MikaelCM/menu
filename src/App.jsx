@@ -1,30 +1,51 @@
 import './App.css'
-import Card from './components/Card'
-import Division from './components/Division'
 
+import BolosDecor from './components/BolosDecor'
+import Division from './components/Division'
 import Header from './components/Header'
+import Masses from './components/Masses'
+import Recheios from './components/Recheios'
 
 function App() {
   const telefone = 5561985901160
   const urlZap = `https://wa.me/${telefone}`
 
+  // BOLOS DECORADOS
   const bolosTradicionais = [
-    {id: 0, nome: "Bentô", preco: "R$50,00"},
-    {id: 1, tamanho: "11cm", fatias: "| 18 a 20 fatias", preco: "R$85,00"},
-    {id: 2, tamanho: "15cm", preco: "R$125,00"},
-    {id: 3, tamanho: "17cm", fatias: "| 18 a 20 fatias", preco: "R$160,00"},
-    {id: 4, tamanho: "20cm", fatias: "| 25 fatias", preco: "R$200,00"},
-    {id: 5, tamanho: "25cm", fatias: "| 30 fatias", preco: "R$250,00"}
+    {id: 0, nome: "Bentô Cake", fatias: "- 4 fatias", preco: "R$50,00"},
+    {id: 1, tamanho: "11cm", fatias: "- 8 fatias", preco: "R$85,00"},
+    {id: 2, tamanho: "15cm", fatias: "- 12 fatias", preco: "R$120,00"},
+    {id: 3, tamanho: "17cm", fatias: "- 20 fatias", preco: "R$160,00"},
+    {id: 4, tamanho: "20cm", fatias: "- 25 fatias", preco: "R$210,00"},
+    {id: 5, tamanho: "25cm", fatias: "- 30 fatias", preco: "R$250,00"},
+    {id: 6, tamanho: "30cm", fatias: "- 50 fatias", preco: "R$340,00"},
   ]
 
   const bolosTradicionaisDescricao = (
   <span>
-    <span className='heart'>{'\u{2764}'}</span> 2 Camadas de recheio e 3 camadas de massa (mais baixo).
+    <span className='heart'>{'\u{2764}'}</span> 2 Camadas de recheio e 3 camadas de massa.
   </span>)
+
+  // MASSAS
+  const massas = [
+    {id: 0, sabor: "BAUNILHA"},
+    {id: 1, sabor: "CHOCOLATE"},
+    {id: 2, sabor: "OS DOIS"},
+  ]
+
+  // RECHEIOS
+  const recheiosEspeciais = [
+    {id: 0, recheio: "Doce de leite com ameixa"},
+    {id: 1, recheio: "Doce de leite com abacaxi"},
+    {id: 2, recheio: "Ninho com nutella"},
+    {id: 3, recheio: "Ninho com geléia de morango"},
+    {id: 4, recheio: "Nozes"},
+    {id: 5, recheio: "Chocolate meio amargo"},
+  ]
 
   return (
     <main>
-      <section className='first-page'>
+      <section className='menu-section'>
         <Header />
         
         <div className="links">
@@ -45,7 +66,6 @@ function App() {
           </div>
         </div>
 
-
         <div className='mixer_words_container'>
           <div className="mixer_image">
             <img src="./mixer.png" alt="Ilustração de um mixer"/>
@@ -56,21 +76,35 @@ function App() {
           </div>
         </div>
         
-        <div className='first-page__title'>
+        <div className='menu__title'>
           <h1>MENU <span className='title__span'>de</span> <br /> BOLOS & DOCES</h1>
         </div>
       </section>
 
+      <Division />
+
+      <section className='cakes-section'>
+        <Header />
+
+        <BolosDecor cardTitle="BOLOS DECORADOS" cakeDescription={bolosTradicionaisDescricao} itemsList={bolosTradicionais} itemsClass="masses-flavours" cakeImage={'./boloAmanda.jpg'}/>
+          
+      </section>
 
       <Division />
 
-
-      <section className='second-page'>
+      <section className='masses-section'>
         <Header />
 
-        <Card cardTitle="BOLOS DECORADOS" cakeName="Bolos Tradicionais" cakeDescription={bolosTradicionaisDescricao} list={bolosTradicionais} nomeClasse="lista" />
-          
-        <Card cakeName="Bolos Alternativos" cakeDescription={bolosTradicionaisDescricao} list={bolosTradicionais} nomeClasse="lista"/>
+        <Masses items={massas} massesFigure={"./masses_strawberry.png"} massesFigure2={'./masses_gloves.png'}/>
+       
+      </section>
+
+      <Division />
+
+      <section className='filling-section'>
+        <Header />
+
+        <Recheios title="RECHEIOS TRADICIONAIS" recheios={recheiosEspeciais}/>
       </section>
     </main>
   )
