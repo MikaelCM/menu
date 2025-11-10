@@ -18,15 +18,18 @@ import RecheiosTrad from './components/Recheios';
 function App() {
   // Animação de fade-in para componentes
    useEffect(() => {
-    AOS.init({
-      duration: 900,
-      once: true,
-    });
-
-    window.addEventListener("load", AOS.refresh);
-    return () => {
-      window.removeEventListener("load", AOS.refresh);
+    const initAOS = () => {
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+      AOS.refresh();
     };
+
+    setTimeout(initAOS, 300);
+    window.addEventListener("load", initAOS);
+
+    return () => window.removeEventListener("load", initAOS);
   }, []);
 
   // INFORMAÇÕES PARA CONTATO COM A DONA
