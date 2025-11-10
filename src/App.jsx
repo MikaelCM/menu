@@ -25,7 +25,7 @@ function App() {
 
     setTimeout(() => {
       AOS.refresh();
-    }, 100);
+    }, 500);
   }, []);  
 
   // INFORMAÇÕES PARA CONTATO COM A DONA
