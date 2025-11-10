@@ -1,6 +1,6 @@
 import './Candies.css'
 
-const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento, candiesImage1, image1DivStyle,candiesImage2, candiesImage3}) => {
+const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento, candiesImage1, image1DivStyle, image2DivStyle, candiesImage2, candiesImage3}) => {
   return (
     <div className="candies__card">
 
@@ -42,7 +42,7 @@ const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento
                     <span>CENTO: {cento}</span>
                 </div>
 
-                <div className='candies__image2'>
+                <div className='candies__image2' style={image2DivStyle}>
                     <img src={candiesImage2} alt="Ilustração de item de confeitaria" />
                 </div>
 

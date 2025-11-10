@@ -2,7 +2,7 @@
 import './App.css';
 
 // Bibliotecas
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,8 +16,9 @@ import RecheiosTrad from './components/Recheios';
 
 // Página
 function App() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     AOS.init({duration: 900, once: true});
+    AOS.refresh();
   }, []);  
 
   // INFORMAÇÕES PARA CONTATO COM A DONA
@@ -99,15 +100,26 @@ function App() {
     {id: 3, tipo: "CHURROS"},
     {id: 4, tipo: "OREO"},
   ];
+
   const docinhosGourCento = "R$120,00";
-  const gourmetImageDivStyle = {
+
+  const gourmetImage1DivStyle = {
     width: "10em",
     margin: "-30px auto",
     padding: 0,
   }
 
+  const gourmetImage2DivStyle = {
+    width: "clamp(3.2em, 16.5vw, 3.7em)",
+    left: "-15px",
+  }
+
 
   const docinhosPersoCento = "R$150,00";
+
+  const persoImage2DivStyle = {
+    width: "clamp(4.8em, 24vw, 5.3em)",
+  };
 
   return (
     <main>
@@ -239,7 +251,8 @@ function App() {
           candiesType="Docinhos Gourmet"
           candiesList={docinhosGour}
           cento={docinhosGourCento}
-          image1DivStyle={gourmetImageDivStyle}
+          image1DivStyle={gourmetImage1DivStyle}
+          image2DivStyle={gourmetImage2DivStyle}
           candiesImage1='./brig_gourmet-doces.png'
           candiesImage2='./docinhos-chocolat.png'
           candiesImage3="./choco-strawbe-doces.png"
@@ -249,6 +262,8 @@ function App() {
           candy__h3="doces-trad"
           candiesType="Docinhos Personalizados"
           cento={docinhosPersoCento}
+          image1DivStyle={gourmetImage1DivStyle}
+          image2DivStyle={persoImage2DivStyle}
           candiesImage1='./brig_gourmet-doces.png'
           candiesImage2='./brigadeiro.png'
           candiesImage3="./choco-strawbe-doces.png"
