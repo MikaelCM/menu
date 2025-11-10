@@ -1,5 +1,6 @@
 .massas__card {
-    color: #fff;
+    width: 100%;
+    
 }
 
 .massas__container {
@@ -18,49 +19,49 @@
     padding: 4px 50px 4px 40px;
     display: flex;
     align-items: center;
-    color: #B2878C;
-    background-color: #E2F1F8;
+    color: var(--texto_marrom);
+    background-color: var(--cor_principal);
 }
 
 .massas__triangle {
     border-top: 1.2em solid transparent;
     border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid #E2F1F8;
+    border-left: 1.5em solid var(--cor_principal);
     flex-shrink: 0;
 }
 
 .flavours__container {
-    background-color: #E2F1F8;
+    background-color: var(--cor_principal);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: 1.1em;
+    font-size: clamp(1.1em, 5.5vw, 1.2em);
     margin: 50px 12% 30px;
     border-radius: 12px;
     padding: 50px 0 100px;
     position: relative;
 }
 
-.masses__image, .masses__image2, .masses__fixed-image {
+.masses__image1, .masses__image2, .masses__fixed-image {
     position: absolute;
 }
 
-.masses__image img, .masses__image2 img, .masses__fixed-image img {
+.masses__image1 img, .masses__image2 img, .masses__fixed-image img {
     width: 100%;
 }
 
-.masses__image {
+.masses__image1 {
     right: -15px;
     top: -15px;
-    width: 50px;
+    width: 3em;
 }
 
 .masses__image2 {
     left: -15px;
     bottom: -10px;
-    width: 55px;
+    width: 3em;
     z-index: 1;
 }
 
@@ -77,8 +78,8 @@
     padding: 0;
 }
 
-.massas-flavours {
-    color: #B2878C;
+.massas-flavours__items {
+    color: var(--texto_marrom);
     display: flex;
     align-items: center;
     gap: 2px;
@@ -86,5 +87,4 @@
 
 .flavours__heart {
     font-size: 0.5em;
-    color: #FFD7DF;
-}
+ }

@@ -1,3 +1,9 @@
+.card__container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
 .card__header {
     color: #fff;
     display: flex;
@@ -5,7 +11,7 @@
 }
 
 .card__title {
-    background-color: #e87ca8;
+    background-color: #FDAEC1;
     height: 2em;
     display: flex;
     align-items: center;
@@ -16,26 +22,26 @@
 .card__header h2 {
     font-weight: 300;
     font-family: "IBM Plex Serif", serif;
-    font-size: clamp(1.2em, 6vw, 1.4em);
+    font-size: clamp(1.3em, 6vw, 1.4em);
     height: 1.2em;
     display: flex;
     align-items: end;
 }
 
 .triangle{
-    border-top: 1.2em solid transparent;
+    border-top: 1.3em solid transparent;
     border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid #e87ca8;
+    border-left: 1.5em solid #FDAEC1;
     flex-shrink: 0;
 }
 
 .cake__image {
-    width: 12.5em;
-    height: 15em;
+    width: 10.5em;
+    height: 13em;
     margin: 30px auto 0;
-    border: 2px solid #FFD7DF;
-    background-color: #FFD7DF;
-    padding: 3px 4px 8px;
+    border: 2px solid var(--cor_principal);
+    background-color: var(--cor_principal);
+    padding: 4px 4px 11px;
     transform: rotate(4deg);
     box-shadow: 0 7px 10px #00000056;
 }
@@ -72,9 +78,8 @@
     vertical-align: middle;
 }
 
-.masses-flavours {
-    list-style: none;
-    background-color: #FFD7DF;
+.bolos-flavours {
+    background-color: var(--cor_principal);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -85,7 +90,7 @@
     margin: 20px 5% 40px;
 }
 
-.masses-flavours li {
+.bolos-flavours li {
   display: grid;
   grid-template-columns: 2fr 0.7fr; 
 }

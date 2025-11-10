@@ -5,6 +5,7 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
     <div className='massas__card'>
 
       <div className="massas__container">
+
         <div className='massas__title'>
           <h2>MASSAS</h2>
         </div>
@@ -13,7 +14,8 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
       </div>
 
       <div className="flavours__container">
-        <div className='masses__image'>
+
+        <div className='masses__image1'>
           <img src={massesFigure} alt="Ilustração de item de confeitaria" />
         </div>
 
@@ -22,12 +24,13 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
         </div>
 
         <div className='masses__fixed-image'>
-          <img src="./outline-of-a-cake.png" alt="An outline of a cake" />
+          <img src="./outline-of-a-cake.png" alt="Contorno de um bolo" />
         </div>
 
         <ul className='flavours'>
           {items.map(flavours => (
-            <li key={flavours.id} className='massas-flavours'>
+
+            <li key={flavours.id} className='massas-flavours__items'>
               <span className='flavours__heart'>
                 {'\u{2764}'}
               </span>
@@ -36,6 +39,7 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
                 {flavours.sabor}
               </span>
             </li>
+            
           ))}
         </ul>
       </div>

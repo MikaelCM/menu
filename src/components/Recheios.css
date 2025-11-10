@@ -5,47 +5,67 @@
 
 .recheios__title {
     font-family: "Playfair Display", serif;
-    font-size:  clamp(0.8em, 4vw, 0.9em);
+    font-size:  clamp(0.8em, 4.4vw, 1em);
     height: 2em;
-    padding: 6px 15px 6px 10px;
+    padding: 6px 10px 6px 10px;
     display: flex;
     align-items: center;
-    color: #B2878C;
-    background-color: #FFD7DF;
+    color: var(--texto_marrom);
+    background-color: var(--cor_principal);
 }
 
 .recheios__triangle {
     border-top: 1.3em solid transparent;
     border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid #FFD7DF;
+    border-left: 1.5em solid var(--cor_principal);
     flex-shrink: 0;
 }
 
 .recheios__container {
-    background-color: #FFD7DF;
+    background-color: var(--cor_principal);
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 30px 30px 30px 0;
-    color: #B2878C;
+    margin: 50px 20px 50px 0;
+    color: var(--texto_marrom);
     border-radius: 5px;
+    position: relative;
+}
+
+.recheios__figure1, .recheios__figure2 {
+    position: absolute;
+}
+
+.recheios__figure1 {
+    right: -30px;
+    top: -50px;
+    width: 5em;
+}
+
+.recheios__figure1 img, .recheios__figure2 img {
+    width: 100%;
+}
+
+.recheios__figure2 {
+    width: 5em;
+    bottom: -45px;
+    left: -32px;
+    transform: rotateZ(-20deg);
 }
 
 .recheios {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 1.1em;
-    padding: 10px 0;
+    font-size: clamp(1.1em, 5vw, 1.3em);
+    width: 79%;
 }
 
 .recheios__lista {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 7px;
 }
 
 .recheios__heart {
-    font-size: 0.4em;
+    font-size: 0.5em;
 }

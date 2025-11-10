@@ -1,9 +1,10 @@
 import './BolosDecor.css'
 
-const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, itemsClass, cakeImage}) => {
+const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}) => {
   return (
     <div className="card_container">
         <div className='card__header'>
+
             <div className={cardTitle && 'card__title'}>
                 {cardTitle && <h2>{cardTitle}</h2>}
             </div>
@@ -12,6 +13,7 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, itemsClass
         </div>
 
         <div className='cake-informations'>
+            
             <div className='cake__image'>
                 <img src={cakeImage} alt="Bolo" />
             </div>
@@ -21,8 +23,9 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, itemsClass
 
                 <p className={!cakeName && "cakeDescriptionMarginTop"}>{cakeDescription}</p>
 
-                <ul className={itemsClass}>
+                <ul className="bolos-flavours">
                     {itemsList.map(item => (
+
                         <li key={item.id}>
                             <span>
                                 {item.nome} {item.tamanho} {item.fatias}
@@ -30,9 +33,9 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, itemsClass
 
                             <span>{item.preco}</span>
                         </li>
+                        
                     ))}
                 </ul>
-                
             </div>
         </div>
     </div>
