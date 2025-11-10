@@ -17,16 +17,17 @@ import RecheiosTrad from './components/Recheios';
 // Página
 function App() {
   // Animação de fade-in para componentes
-  useEffect(() => {
+   useEffect(() => {
     AOS.init({
-      duration: 900, 
-      once: true
+      duration: 900,
+      once: true,
     });
 
-    setTimeout(() => {
-      AOS.refresh();
-    }, 500);
-  }, []);  
+    window.addEventListener("load", AOS.refresh);
+    return () => {
+      window.removeEventListener("load", AOS.refresh);
+    };
+  }, []);
 
   // INFORMAÇÕES PARA CONTATO COM A DONA
   const telefone = 5561985901160;
