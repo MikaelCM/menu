@@ -2,7 +2,7 @@
 import './App.css';
 
 // Bibliotecas
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -16,9 +16,16 @@ import RecheiosTrad from './components/Recheios';
 
 // Página
 function App() {
-  useLayoutEffect(() => {
-    AOS.init({duration: 900, once: true});
-    AOS.refresh();
+  // Animação de fade-in para componentes
+  useEffect(() => {
+    AOS.init({
+      duration: 900, 
+      once: true
+    });
+
+    setTimeout(() => {
+      AOS.refresh();
+    }, 100);
   }, []);  
 
   // INFORMAÇÕES PARA CONTATO COM A DONA
