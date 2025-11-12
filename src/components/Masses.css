@@ -1,6 +1,5 @@
 .massas__card {
     width: 100%;
-    
 }
 
 .massas__container {
@@ -14,7 +13,7 @@
 
 .massas__title {
     font-family: "Playfair Display", serif;
-    font-size:  clamp(0.84em, 4.2vw, 0.98em);
+    font-size:  clamp(0.9em, 4.5vw, 1em);
     height: 2em;
     padding: 4px 50px 4px 40px;
     display: flex;

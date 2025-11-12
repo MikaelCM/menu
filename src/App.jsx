@@ -13,10 +13,11 @@ import Division from './components/Division';
 import Header from './components/Header';
 import Masses from './components/Masses';
 import RecheiosTrad from './components/Recheios';
+import PartyCandies from './components/PartyCandies';
 
 // Página
 function App() {
-  // Animação de fade-in para componentes
+  // ANIMAÇÃO DE FADE-IN PARA COMPONENTES
    useEffect(() => {
     const initAOS = () => {
       AOS.init({
@@ -38,13 +39,13 @@ function App() {
 
   // BOLOS DECORADOS
   const bolosTradicionais = [
-    {id: 0, nome: "Bentô Cake", fatias: "- 4 fatias", preco: "R$50,00"},
-    {id: 1, tamanho: "11cm", fatias: "- 8 fatias", preco: "R$85,00"},
-    {id: 2, tamanho: "15cm", fatias: "- 12 fatias", preco: "R$120,00"},
-    {id: 3, tamanho: "17cm", fatias: "- 20 fatias", preco: "R$160,00"},
-    {id: 4, tamanho: "20cm", fatias: "- 25 fatias", preco: "R$210,00"},
-    {id: 5, tamanho: "25cm", fatias: "- 30 fatias", preco: "R$250,00"},
-    {id: 6, tamanho: "30cm", fatias: "- 50 fatias", preco: "R$340,00"},
+    {id: 0, nome: "Bentô Cake", fatias: " - 4 fatias", preco: "R$50,00"},
+    {id: 1, tamanho: "11cm", fatias: " - 8 fatias", preco: "R$85,00"},
+    {id: 2, tamanho: "15cm", fatias: " - 12 fatias", preco: "R$120,00"},
+    {id: 3, tamanho: "17cm", fatias: " - 20 fatias", preco: "R$160,00"},
+    {id: 4, tamanho: "20cm", fatias: " - 25 fatias", preco: "R$210,00"},
+    {id: 5, tamanho: "25cm", fatias: " - 30 fatias", preco: "R$250,00"},
+    {id: 6, tamanho: "30cm", fatias: " - 50 fatias", preco: "R$340,00"},
   ];
 
   const bolosTradicionaisDescricao = (
@@ -56,7 +57,6 @@ function App() {
   const massas = [
     {id: 0, sabor: "BAUNILHA"},
     {id: 1, sabor: "CHOCOLATE"},
-    {id: 2, sabor: "OS DOIS"},
   ];
 
   // RECHEIOS
@@ -101,7 +101,7 @@ function App() {
     {id: 6, tipo: "CASADINHO"},
     {id: 7, tipo: "BRIGADEIRO BRANCO"},
   ];
-  const docinhosTraCento = "R$100,00";
+  const docinhosTraCento = "R$135,00";
 
 
   const docinhosGour = [
@@ -112,10 +112,10 @@ function App() {
     {id: 4, tipo: "OREO"},
   ];
 
-  const docinhosGourCento = "R$120,00";
+  const docinhosGourCento = "R$150,00";
 
   const gourmetImage1DivStyle = {
-    width: "10em",
+    width: "clamp(9em, 45vw, 10em)",
     margin: "-30px auto",
     padding: 0,
   }
@@ -125,13 +125,45 @@ function App() {
     left: "-15px",
   }
 
+  const gourmetImage3DivStyle = {
+    width: "clamp(5em, 25vw, 5.4em)",
+    right: "-33px",
+    bottom: "-40px"
+  }
 
-  const docinhosPersoCento = "R$150,00";
 
-  const persoImage2DivStyle = {
-    width: "clamp(4.8em, 24vw, 5.3em)",
+  const docinhosPersoCento = "R$170,00";
+
+  const persoImage1DivStyle = {
+    filter: "drop-shadow(0 2px 4px #0000007e)",
+    width: "clamp(9em, 45vw, 9.5em)"
   };
 
+  const persoImage2DivStyle = {
+    width: "clamp(4em, 20vw, 4.3em)",
+    bottom: "-38px",
+    left: "-18px"
+  };
+
+  const persoImage3DivStyle = {
+    width: "clamp(5.5em, 26vw, 5.8em)",
+    right: "-12px"
+  };
+
+  const docinhosListaUni = [
+    {id: 0, uni: "25 uni.", saboresQuant: "1 Sabor"},
+    {id: 1, uni: "50 uni.", saboresQuant: "2 Sabores"},
+    {id: 2, uni: "75 uni.", saboresQuant: "3 Sabores"},
+    {id: 3, uni: "100 uni.", saboresQuant: "4 Sabores"},
+  ]
+
+  // DOCES DE FESTA
+  const partyCandies = [
+    {id: 0, cakeType: "Mini Cupcake", price: "R$4,00"},
+    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,00"},
+    {id: 2, cakeType: "Cupcake", price: "R$7,00"},
+    {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$9,00"},
+  ]
   return (
     <main>
       {/* SEÇÃO DO MENU */}
@@ -242,7 +274,7 @@ function App() {
       <Division />
 
       {/* SEÇÃO DE DOCINHOS */}
-      <section className='candies-section' data-aos="slide-right">
+      <section className='candies-section'>
         <Header />
 
         <Candies 
@@ -255,6 +287,7 @@ function App() {
           candiesImage1='./brigadeiros-doces.png'
           candiesImage2='./pink-bisc-doces.png'
           candiesImage3="./choco-strawbe-doces.png"
+          dataAOS="fade-left"
         />
 
         <Candies 
@@ -264,25 +297,43 @@ function App() {
           cento={docinhosGourCento}
           image1DivStyle={gourmetImage1DivStyle}
           image2DivStyle={gourmetImage2DivStyle}
+          image3DivStyle={gourmetImage3DivStyle}
           candiesImage1='./brig_gourmet-doces.png'
           candiesImage2='./docinhos-chocolat.png'
-          candiesImage3="./choco-strawbe-doces.png"
+          candiesImage3="./bisc-doces.png"
+          dataAOS="fade-right"
         />
 
         <Candies 
           candy__h3="doces-trad"
           candiesType="Docinhos Personalizados"
           cento={docinhosPersoCento}
-          image1DivStyle={gourmetImage1DivStyle}
+          image1DivStyle={persoImage1DivStyle}
           image2DivStyle={persoImage2DivStyle}
-          candiesImage1='./brig_gourmet-doces.png'
-          candiesImage2='./brigadeiro.png'
-          candiesImage3="./choco-strawbe-doces.png"
+          image3DivStyle={persoImage3DivStyle}
+          candiesImage1='./doces-perso-doces.png'
+          candiesImage2='./brigadeiro-doces.png'
+          candiesImage3="./doce-doces.png"
+          dataAOS="fade-left"
+          listaUni={docinhosListaUni}
         />
 
       </section>
 
       <Division />
+
+      {/* SEÇÃO DE DOCES DE FESTA */}
+      <section className='partyCandies-section'>
+        <Header />
+
+        <PartyCandies 
+          Title="DOCES DE FESTA"
+          partyCand__h3="Mini Cupcakes"
+          partyCandies={partyCandies}
+          partyCand__illuFig1='./partyCandies_cupcake.png'
+          partyCand__illuFig2='./partyCandies_cake.png'
+        />
+      </section>
 
     </main>
   )

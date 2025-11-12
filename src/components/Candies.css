@@ -40,11 +40,9 @@
 
 #doces-trad {
     font-family: "Updock", cursive;
-    font-size: 1.9em;
+    font-size: clamp(1.9em, 9vw, 2em);
     color: var(--texto_marrom);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 #doces-trad h3 {
@@ -61,7 +59,7 @@
 }
 
 .candies__image1 {
-    width: 10em;
+    width: clamp(8.3em, 42vw, 9em);
     margin: 0 auto 20px;
     filter: drop-shadow(0 3px 5px #000000b4);
 }
@@ -110,7 +108,7 @@
 }
 
 .candies__price {
-    margin: 0 auto;
+    margin: 0 27%;
     font-size: clamp(0.8em, 4.4vw, 1em);
     color: #fff;
     display: flex;
@@ -123,4 +121,42 @@
     border-radius: 50px;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.tableAndImage__cont {
+    position: relative;
+}
+
+.docinhos-mixer__cont {
+    width: 3.3em;
+    position: absolute;
+    bottom: -15px;
+}
+
+.docinhos-mixer__cont img {
+    width: 100%;
+}
+
+.docinhos__table {
+    background-color: var(--tabelas);
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: 0 5% 30px;
+    width: 90%;
+}
+
+.docinhos__td {
+    border-bottom: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+    padding: 10px 40px;
+    color: var(--textos_tabela);
+    font-size: 1.1em;
+}
+
+.docinhos__td:last-child {
+    border-right: none;
+}
+
+.docinhos__table tr:last-child td {
+    border-bottom: none;
 }

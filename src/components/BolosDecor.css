@@ -5,7 +5,7 @@
 }
 
 .card__header {
-    color: #fff;
+    color: var(--texto_marrom);
     display: flex;
     align-items: center;
 }
@@ -17,12 +17,13 @@
     align-items: center;
     justify-content: center;
     padding: 4px 2%;
+    color: #fff;
 }
 
 .card__header h2 {
     font-weight: 300;
+    font-size: clamp(1.3em, 6.5vw, 1.5em);
     font-family: "IBM Plex Serif", serif;
-    font-size: clamp(1.3em, 6vw, 1.4em);
     height: 1.2em;
     display: flex;
     align-items: end;
@@ -59,16 +60,9 @@
     padding-top: 40px;
 }
 
-.cake-informations h3 {
-    font-family: "Great Vibes", cursive;
-    color: #B2878C;
-    font-size: 2em;
-    text-align: center;
-}
-
 .cake-informations p {
     text-align: center;
-    color: #B2878C;
+    color: var(--texto_marrom);
     max-width: 240px;
     margin: 0 auto;
 }
@@ -78,19 +72,28 @@
     vertical-align: middle;
 }
 
-.bolos-flavours {
-    background-color: var(--cor_principal);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: clamp(1em, 5vw, 1.1em);
+.bolos__table {
+    background-color: var(--tabelas);
+    font-size: clamp(0.95em, 4.5vw, 1.1em);
     color: #B2878C;
     font-weight: 700;
-    margin: 20px 5% 40px;
+    margin: 20px 5% 30px;
+    color: var(--textos_tabela);
+    border-collapse: collapse;
+    width: 90%;
+    border-radius: 10px;
 }
 
-.bolos-flavours li {
-  display: grid;
-  grid-template-columns: 2fr 0.7fr; 
+.bolos__td {
+    border-right: 1px dotted #fff;
+    border-bottom: 1px dotted #fff;
+    padding: 15px 20px;
+}
+
+.bolos__td:last-child {
+    border-right: none;
+}
+
+.bolos__table tr:last-child td {
+    border-bottom: none;
 }

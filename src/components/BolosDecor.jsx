@@ -3,19 +3,22 @@ import './BolosDecor.css'
 const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}) => {
   return (
     <div className="card_container">
-        <div className='card__header'>
 
-            <div className={cardTitle && 'card__title'}>
-                {cardTitle && <h2>{cardTitle}</h2>}
-            </div>
+        {cardTitle && (
+            <header className='card__header'>
 
-            <div className={cardTitle && "triangle"}></div>
-        </div>
+                <div className='card__title'>
+                    <h2>{cardTitle}</h2>
+                </div>
+
+                <div className='triangle'></div>
+            </header>
+        )}
 
         <div className='cake-informations'>
             
             <div className='cake__image'>
-                <img src={cakeImage} alt="Bolo" />
+                <img src={cakeImage} alt="Bolo do La Dolce Dinha" />
             </div>
 
             <div>
@@ -23,19 +26,23 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}
 
                 <p className={!cakeName && "cakeDescriptionMarginTop"}>{cakeDescription}</p>
 
-                <ul className="bolos-flavours">
-                    {itemsList.map(item => (
+                <table className="bolos__table">
+                    <tbody className='bolos__tbody'>
 
-                        <li key={item.id}>
-                            <span>
-                                {item.nome} {item.tamanho} {item.fatias}
-                            </span>
+                        {itemsList.map(item => (
+                            <tr key={item.id}>
+                                <td className='bolos__td'>
+                                    {item.nome}
+                                    {item.tamanho} 
+                                    {item.fatias}
+                                </td>
 
-                            <span>{item.preco}</span>
-                        </li>
-                        
-                    ))}
-                </ul>
+                                <td className='bolos__td'>{item.preco}</td>
+                            </tr>
+                        ))}
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -6,9 +6,9 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
 
       <div className="massas__container">
 
-        <div className='massas__title'>
+        <header className='massas__title'>
           <h2>MASSAS</h2>
-        </div>
+        </header>
 
         <div className="massas__triangle"></div>
       </div>

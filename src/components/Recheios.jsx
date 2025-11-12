@@ -3,7 +3,7 @@ import './Recheios.css'
 const Recheios = ({title, recheios, recheiosFigure1, recheiosFigure2, figure1Style, figure2Style}) => {
   return (
     <div className='recheios__card'>
-        <div className='recheios__header'>
+        <header className='recheios__header'>
 
             <div className={title && "recheios__title"}>
                 <h2>{title}</h2>
@@ -11,7 +11,7 @@ const Recheios = ({title, recheios, recheiosFigure1, recheiosFigure2, figure1Sty
 
             <div className={title && 'recheios__triangle'}></div>
 
-        </div>
+        </header>
 
         <div className='recheios__container'>
 

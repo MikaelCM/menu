@@ -1,23 +1,24 @@
 .recheios__header {
     display: flex;
-    align-items: center;
 }
 
 .recheios__title {
     font-family: "Playfair Display", serif;
     font-size:  clamp(0.8em, 4.4vw, 1em);
-    height: 2em;
     padding: 6px 10px 6px 10px;
     display: flex;
-    align-items: center;
     color: var(--texto_marrom);
     background-color: var(--cor_principal);
 }
 
+.recheios__title h2 {
+    margin: 0;
+}
+
 .recheios__triangle {
-    border-top: 1.3em solid transparent;
-    border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid var(--cor_principal);
+    border-top: 1.4em solid transparent;
+    border-bottom: 1.4em solid transparent;
+    border-left: 1.4em solid var(--cor_principal);
     flex-shrink: 0;
 }
 
@@ -35,14 +36,14 @@
     position: absolute;
 }
 
+.recheios__figure1 img, .recheios__figure2 img {
+    width: 100%;
+}
+
 .recheios__figure1 {
     right: -30px;
     top: -50px;
     width: 5em;
-}
-
-.recheios__figure1 img, .recheios__figure2 img {
-    width: 100%;
 }
 
 .recheios__figure2 {
