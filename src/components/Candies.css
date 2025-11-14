@@ -38,14 +38,14 @@
     flex-shrink: 0;
 }
 
-#doces-trad {
+#doces__h3 {
     font-family: "Updock", cursive;
     font-size: clamp(1.9em, 9vw, 2em);
     color: var(--texto_marrom);
     text-align: center;
 }
 
-#doces-trad h3 {
+#doces__h3 h3 {
     font-weight: 600;
     margin: 0;
 }
@@ -128,7 +128,7 @@
 }
 
 .docinhos-mixer__cont {
-    width: 3.3em;
+    width: clamp(3.3em, 13vw, 4em);
     position: absolute;
     bottom: -15px;
 }

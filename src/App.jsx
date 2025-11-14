@@ -39,13 +39,13 @@ function App() {
 
   // BOLOS DECORADOS
   const bolosTradicionais = [
-    {id: 0, nome: "Bentô Cake", fatias: " - 4 fatias", preco: "R$50,00"},
-    {id: 1, tamanho: "11cm", fatias: " - 8 fatias", preco: "R$85,00"},
-    {id: 2, tamanho: "15cm", fatias: " - 12 fatias", preco: "R$120,00"},
-    {id: 3, tamanho: "17cm", fatias: " - 20 fatias", preco: "R$160,00"},
-    {id: 4, tamanho: "20cm", fatias: " - 25 fatias", preco: "R$210,00"},
-    {id: 5, tamanho: "25cm", fatias: " - 30 fatias", preco: "R$250,00"},
-    {id: 6, tamanho: "30cm", fatias: " - 50 fatias", preco: "R$340,00"},
+    {id: 0, nome: "Bentô Cake", fatias: "4 fatias"},
+    {id: 1, tamanho: "11cm", fatias: "8 fatias"},
+    {id: 2, tamanho: "15cm", fatias: "12 fatias"},
+    {id: 3, tamanho: "17cm", fatias: "20 fatias",},
+    {id: 4, tamanho: "20cm", fatias: "25 fatias"},
+    {id: 5, tamanho: "25cm", fatias: "30 fatias"},
+    {id: 6, tamanho: "30cm", fatias: "50 fatias"},
   ];
 
   const bolosTradicionaisDescricao = (
@@ -81,13 +81,13 @@ function App() {
 
   // Alterar as imagens dos recheios em estilo inline passadas como prop
   const blueCupcake = {
-    fontSize: "0.65em",
+    fontSize: "clamp(0.6em, 3vw, 0.7em)",
     transform: "translateX(-11px)",
   };
 
   const berliner = {
-    fontSize: "0.7em",
-    transform: "rotate(0) translate(20px, -15px)",
+    fontSize: "clamp(0.7em, 3.4vw, 0.8em)",
+    transform: " translate(15px, -15px)",
   };
 
   // DOCES
@@ -150,20 +150,27 @@ function App() {
     right: "-12px"
   };
 
+
   const docinhosListaUni = [
     {id: 0, uni: "25 uni.", saboresQuant: "1 Sabor"},
     {id: 1, uni: "50 uni.", saboresQuant: "2 Sabores"},
     {id: 2, uni: "75 uni.", saboresQuant: "3 Sabores"},
     {id: 3, uni: "100 uni.", saboresQuant: "4 Sabores"},
-  ]
+  ];
 
   // DOCES DE FESTA
-  const partyCandies = [
+  const miniCupcakes = [
     {id: 0, cakeType: "Mini Cupcake", price: "R$4,00"},
-    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,00"},
-    {id: 2, cakeType: "Cupcake", price: "R$7,00"},
+    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$7,00"},
+    {id: 2, cakeType: "Cupcake", price: "R$10,00"},
     {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$9,00"},
-  ]
+  ];
+
+
+  const miniBrownie = [
+    {id: 0, cakeType: "Doce de leite", cakeType2: "Brigadeiro", cakeType3: "Ninho com Nutella", price: "R$4,50 - 1 unidade & R$79,99 - 20 unidades"},
+  ];
+
   return (
     <main>
       {/* SEÇÃO DO MENU */}
@@ -218,7 +225,11 @@ function App() {
 
           itemsClass="masses-flavours" 
 
-          cakeImage={'./boloAmanda.jpg'}
+          cakeImage='./boloAmanda.jpg'
+
+          fig='./bolosDecor_cupcake.png'
+
+          textoAlt="Bolo decorado"
         />
       </section>
 
@@ -279,42 +290,71 @@ function App() {
 
         <Candies 
           title="DOCES" 
+
           title__span=" MÍNIMO 25 UNIDADES"
-          candy__h3="doces-trad"
+
           candiesType="Docinhos Tradicionais"
+
           candiesList={docinhosTra}
+
           cento={docinhosTraCento}
+
           candiesImage1='./brigadeiros-doces.png'
+
+          textoAlt="Doces tradicionais"
+
           candiesImage2='./pink-bisc-doces.png'
+
           candiesImage3="./choco-strawbe-doces.png"
+
           dataAOS="fade-left"
         />
 
         <Candies 
-          candy__h3="doces-trad"
           candiesType="Docinhos Gourmet"
+
           candiesList={docinhosGour}
+
           cento={docinhosGourCento}
+
           image1DivStyle={gourmetImage1DivStyle}
+
           image2DivStyle={gourmetImage2DivStyle}
+
           image3DivStyle={gourmetImage3DivStyle}
+
           candiesImage1='./brig_gourmet-doces.png'
+
+          textoAlt="Doces gourmet"
+
           candiesImage2='./docinhos-chocolat.png'
+
           candiesImage3="./bisc-doces.png"
+
           dataAOS="fade-right"
         />
 
         <Candies 
-          candy__h3="doces-trad"
           candiesType="Docinhos Personalizados"
+
           cento={docinhosPersoCento}
+
           image1DivStyle={persoImage1DivStyle}
+
           image2DivStyle={persoImage2DivStyle}
+
           image3DivStyle={persoImage3DivStyle}
+
           candiesImage1='./doces-perso-doces.png'
+
+          textoAlt="Doces personalizados"
+
           candiesImage2='./brigadeiro-doces.png'
+
           candiesImage3="./doce-doces.png"
+
           dataAOS="fade-left"
+
           listaUni={docinhosListaUni}
         />
 
@@ -328,10 +368,30 @@ function App() {
 
         <PartyCandies 
           Title="DOCES DE FESTA"
+
           partyCand__h3="Mini Cupcakes"
-          partyCandies={partyCandies}
+
+          mainFig='./partyCand_main-cupcake.png'
+
+          textoAlt="Mini cupcake"
+
+          partyCandies={miniCupcakes}
+
           partyCand__illuFig1='./partyCandies_cupcake.png'
+
           partyCand__illuFig2='./partyCandies_cake.png'
+        />
+
+        <PartyCandies 
+          partyCand__h3="Mini Brownie"
+
+          partyCandies={miniBrownie}
+
+          partyCand__illuFig1='./partyCandies_cupcake.png'
+
+          partyCand__illuFig2='./partyCandies_cake.png'
+
+          minimumText="MÍNIMO 15 UNIDADES"
         />
       </section>
 

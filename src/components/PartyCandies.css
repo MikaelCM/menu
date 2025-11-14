@@ -2,7 +2,6 @@
     color: var(--texto_marrom);
     display: flex;
     text-align: center;
-    height: 3.4em;
 }
 
 .partyCand__header {
@@ -33,27 +32,72 @@
 
 .partyCand-h3__cont {
     color: var(--texto_marrom);
-    font-family: "Rouge Script", cursive;
     text-align: center;
-    font-size: 1.8em;
-    font-size: clamp(1.9em, 9vw, 2em);
 }
 
 .partyCand-h3__cont h3 {
+    font-family: "Rouge Script", cursive;
+    font-size: clamp(2.1em, 10vw, 2.2em);
+    margin: -2px;
+}
+
+.partyCand__minText {
     font-weight: 600;
+    font-size: 0.8em;
+}
+
+#main-figure {
+    width: clamp(12em, 59vw, 13em);
+    margin: 30px auto 50px;
+    border: 2px solid var(--cor_principal);
+    background-color: var(--cor_principal);
+    padding: 4px 4px 11px;
+    transform: rotate(4deg);
+    box-shadow: 0 7px 10px #00000056;
+}
+
+#main-figure img {
+    width: 100%;
+}
+
+.partyCand__fig1 {
+    filter: drop-shadow(-0.6px 3px 1px #0000003d);
+    right: -20px;
+    top: -50px;
+}
+
+.partyCand__fig2 {
+    bottom: -45px;
+    left: -7px;
+    filter: drop-shadow(2px 0 1px #0000003a);
+}
+
+.partyCand__fig1, .partyCand__fig2 {
+    position: absolute;
+    width: clamp(3.5em, 17vw, 3.8em);
+}
+
+.partyCand__fig1 img, .partyCand__fig2 img {
+    width: 100%;
 }
 
 #partyCand__cont {
+    margin-top: 30px;
     position: relative;
+}
+
+.main-fig-and-fig1__cont {
+    background-color: #0000003a;
 }
 
 .partyCand__table {
     background-color: var(--tabelas);
     border-radius: 10px;
     border-collapse: collapse;
-    margin: 0 5% 30px;
+    margin: 0 5% 40px;
     width: 90%;
     color: #fff;
+    position: relative;
 }
 
 .partyCand__td {
@@ -61,33 +105,9 @@
     border-right: 1px dotted #fff;
     padding: 15px 30px;
     color: var(--textos_tabela);
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .partyCand__table tr:last-child td {
     border-bottom: none;
-}
-
-.partyCand__fig1 {
-    position: absolute;
-    width: 4em;
-    filter: drop-shadow(-0.6px 3px 1px #0000003d);
-    right: 10px;
-    top: 25px;
-}
-
-.partyCand__fig1 img {
-    width: 100%;
-}
-
-.partyCand__fig2 {
-    position: absolute;
-    width: 4em;
-    bottom: -50px;
-    left: -10px;
-}
-
-.partyCand__fig2 img {
-    width: 100%;
-    filter: drop-shadow(2px 0 1px #0000003a);
 }

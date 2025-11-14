@@ -37,8 +37,8 @@
 }
 
 .cake__image {
-    width: 10.5em;
-    height: 13em;
+    width: 11.5em;
+    height: 14em;
     margin: 30px auto 0;
     border: 2px solid var(--cor_principal);
     background-color: var(--cor_principal);
@@ -58,6 +58,10 @@
 
 .cakeDescriptionMarginTop {
     padding-top: 40px;
+}
+
+.h3-table-img__cont {
+    position: relative;
 }
 
 .cake-informations p {
@@ -96,4 +100,16 @@
 
 .bolos__table tr:last-child td {
     border-bottom: none;
+}
+
+.bolosDecor__img {
+    width: clamp(2.9em, 12vw, 3em);
+    position: absolute;
+    top: 2.4em;
+    right: 18px;
+    filter: drop-shadow(0 2px 2px #00000071);
+}
+
+.bolosDecor__img img {
+    width: 100%;
 }

@@ -43,13 +43,13 @@
 .recheios__figure1 {
     right: -30px;
     top: -50px;
-    width: 5em;
+    width: 4em;
 }
 
 .recheios__figure2 {
-    width: 5em;
+    width: 4em;
     bottom: -45px;
-    left: -32px;
+    left: -24px;
     transform: rotateZ(-20deg);
 }
 

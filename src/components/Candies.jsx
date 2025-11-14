@@ -1,6 +1,6 @@
 import './Candies.css'
 
-const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento, candiesImage1, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, dataAOS, listaUni}) => {
+const Candies = ({title, title__span, candiesType, candiesList, cento, candiesImage1, textoAlt, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, dataAOS, listaUni}) => {
     return (
         <div className="candies__card">
 
@@ -14,14 +14,14 @@ const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento
             </header>
 
             <div className="candies__container" data-aos={dataAOS}>
-                <div id={candy__h3}>
+                <div id="doces__h3">
                     <h3>{candiesType}</h3>
                 </div>
 
                 <div className="candyList__container">
 
                     <div className='candies__image1' style={image1DivStyle}>
-                        <img src={candiesImage1} alt="Ilustração de item de confeitaria"/>
+                        <img src={candiesImage1} alt={textoAlt}/>
                     </div>
 
                     {candiesList && (
@@ -43,11 +43,11 @@ const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento
                     </div>
 
                     <div className='candies__image2' style={image2DivStyle}>
-                        <img src={candiesImage2} alt="Ilustração de item de confeitaria" />
+                        <img src={candiesImage2} alt="" />
                     </div>
 
                     <div className='candies__image3' style={image3DivStyle}>
-                        <img src={candiesImage3} alt="Ilustração de item de confeitaria" />
+                        <img src={candiesImage3} alt="" />
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ const Candies = ({title, title__span, candy__h3, candiesType, candiesList, cento
                 <div className='tableAndImage__cont'>
 
                     <div className='docinhos-mixer__cont'>
-                        <img src="./docinhos_mixer.png" alt="Ilustração de item de confeitaria" />
+                        <img src="./docinhos_mixer.png" alt="" />
                     </div>
 
                     <table className='docinhos__table'>

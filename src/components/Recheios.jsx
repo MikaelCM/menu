@@ -18,7 +18,7 @@ const Recheios = ({title, recheios, recheiosFigure1, recheiosFigure2, figure1Sty
             <div className={recheiosFigure1 && "recheios__figure1"} style={figure1Style}>
 
                 {recheiosFigure1 && (
-                    <img src={recheiosFigure1} alt="Ilustração de item de confeitaria" />
+                    <img src={recheiosFigure1} alt="" />
                 )}
 
             </div>
@@ -26,7 +26,7 @@ const Recheios = ({title, recheios, recheiosFigure1, recheiosFigure2, figure1Sty
             <div className={recheiosFigure2 && "recheios__figure2"} style={figure2Style}>
 
                 {recheiosFigure2 && (
-                    <img src={recheiosFigure2} alt="Ilustração de item de confeitaria" />
+                    <img src={recheiosFigure2} alt="" />
                 )}
                 
             </div>

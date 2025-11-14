@@ -16,11 +16,11 @@ const Massas = ({ items, massesFigure, massesFigure2 }) => {
       <div className="flavours__container">
 
         <div className='masses__image1'>
-          <img src={massesFigure} alt="Ilustração de item de confeitaria" />
+          <img src={massesFigure} alt="" />
         </div>
 
         <div className='masses__image2'>
-          <img src={massesFigure2} alt="Ilustração de item de confeitaria" />
+          <img src={massesFigure2} alt="" />
         </div>
 
         <div className='masses__fixed-image'>

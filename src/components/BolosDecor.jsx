@@ -1,6 +1,6 @@
 import './BolosDecor.css'
 
-const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}) => {
+const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage, fig, textoAlt}) => {
   return (
     <div className="card_container">
 
@@ -18,10 +18,10 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}
         <div className='cake-informations'>
             
             <div className='cake__image'>
-                <img src={cakeImage} alt="Bolo do La Dolce Dinha" />
+                <img src={cakeImage} alt={textoAlt} />
             </div>
 
-            <div>
+            <div className='h3-table-img__cont'>
                 <h3 className={!cakeName && "cakeNameDontShow"}>{cakeName}:</h3>
 
                 <p className={!cakeName && "cakeDescriptionMarginTop"}>{cakeDescription}</p>
@@ -34,15 +34,19 @@ const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage}
                                 <td className='bolos__td'>
                                     {item.nome}
                                     {item.tamanho} 
-                                    {item.fatias}
                                 </td>
 
-                                <td className='bolos__td'>{item.preco}</td>
+                                <td className='bolos__td'>{item.fatias}</td>
                             </tr>
                         ))}
 
                     </tbody>
                 </table>
+
+                <div className='bolosDecor__img'>
+                    <img src={fig} alt="" />
+                </div>
+
             </div>
         </div>
     </div>
