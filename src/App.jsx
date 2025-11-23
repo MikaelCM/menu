@@ -59,6 +59,8 @@ function App() {
   const massas = [
     {id: 0, sabor: "BAUNILHA"},
     {id: 1, sabor: "CHOCOLATE"},
+    {id: 2, sabor: "RED VELVET"},
+    {id: 3, sabor: "MISTA"},
   ];
 
   // RECHEIOS
@@ -107,7 +109,7 @@ function App() {
   const docinhosTraCento = "R$135,00";
 
 
-  const docinhosGour = [
+  const docinhosEsp = [
     {id: 0, tipo: "FERRERO ROCHER"},
     {id: 1, tipo: "NINHO COM NUTELLA"},
     {id: 2, tipo: "MORANGO COM NUTELLA"},
@@ -115,20 +117,20 @@ function App() {
     {id: 4, tipo: "OREO"},
   ];
 
-  const docinhosGourCento = "R$150,00";
+  const docinhosEspCento = "R$150,00";
 
-  const gourmetImage1DivStyle = {
+  const EspImage1DivStyle = {
     width: "clamp(9em, 45vw, 10em)",
     margin: "-30px auto",
     padding: 0,
   }
 
-  const gourmetImage2DivStyle = {
+  const EspImage2DivStyle = {
     width: "clamp(3.2em, 16.5vw, 3.7em)",
     left: "-15px",
   }
 
-  const gourmetImage3DivStyle = {
+  const EspImage3DivStyle = {
     width: "clamp(5em, 25vw, 5.4em)",
     right: "-33px",
     bottom: "-40px"
@@ -163,8 +165,8 @@ function App() {
 
   // DOCES DE FESTA
   const miniCupcakes = [
-    {id: 0, cakeType: "Mini Cupcake", price: "R$4,00"},
-    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,50"},
+    {id: 0, cakeType: "Mini Cupcake", price: "R$3,50"},
+    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,00"},
     {id: 2, cakeType: "Cupcake", price: "R$7,00"},
     {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$10,00"},
   ];
@@ -246,12 +248,12 @@ function App() {
 
 
   const kit4 = [
-    {id: 0, quant: 1, nome: "Bento Cake"},
-    {id: 1, quant: 50, nome: "Docinhos"},
-    {id: 2, quant: 170, nome: "Salgadinhos"},
+    {id: 0, quant: 1, nome: "Bolo de 2kg"},
+    {id: 1, quant: 70, nome: "Docinhos"},
+    {id: 2, quant: 100, nome: "Salgadinhos"},
   ];
 
-  const kit4Preco = "310,00";
+  const kit4Preco = "330,00";
 
   const fig4PartyKitStyle = {
     bottom: "-25px",
@@ -289,12 +291,12 @@ function App() {
   const additionalSecond = [
     {id: 0, info: "Prazo para encomenda: 3 dias úteis."},
     {id: 1, info: "Encomendas só são confirmadas após o envio do comprovante de 50% do sinal."},
-    {id: 2, info: "Não trabalhamos aos domingos e segunda-feiras."},
+    {id: 2, info: "Não trabalhamos aos domingos."},
     {id: 3, info: "Formas de pagamento: à vista, débito, crédito, link de pagamento e pix.(LINK DE PAGAMENTO E CARTÃO DE CRÉDITO: À VISTA OU PARCELADO COM ACRÉSCIMO POR CONTA DO CLIENTE)."},
-    {id: 4, info: "Não realizamos entregas, apenas retirada: Rua 21 norte, Águas Claras - Brasília DF."},
+    {id: 4, info: "Não realizamos entregas, apenas retirada."},
     {id: 5, info: "Entregas podem ser feitas via Uber Flash, por total responsabilidade do cliente."},
     {id: 6, info: "Não vendemos fiado ou à prazo."},
-    {id: 7, info: [<strong key={7}>HORÁRIO DE RETIRADA DE <time>10H ÀS 21H.</time></strong>]},
+    {id: 7, info: [<strong key={7}>HORÁRIO DE RETIRADA DE <time>08H ÀS 18H.</time></strong>]},
   ];
 
 
@@ -457,19 +459,19 @@ function App() {
         <Candies 
           candiesType="Docinhos Especiais"
 
-          candiesList={docinhosGour}
+          candiesList={docinhosEsp}
 
-          cento={docinhosGourCento}
+          cento={docinhosEspCento}
 
-          image1DivStyle={gourmetImage1DivStyle}
+          image1DivStyle={EspImage1DivStyle}
 
-          image2DivStyle={gourmetImage2DivStyle}
+          image2DivStyle={EspImage2DivStyle}
 
-          image3DivStyle={gourmetImage3DivStyle}
+          image3DivStyle={EspImage3DivStyle}
 
           candiesImage1='./brig_gourmet-doces.png'
 
-          textoAlt="Doces gourmet"
+          textoAlt="Doces Especiais"
 
           candiesImage2='./docinhos-chocolat.png'
 
