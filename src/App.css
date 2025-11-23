@@ -87,7 +87,7 @@
 .menu__title {
     background-color: var(--titulosFundo);
     color: #fff;
-    font-size: clamp(1.2em, 7vw, 1.4em);
+    font-size: clamp(1.2em, 6vw, 1.3em);
     text-align: center;
     display: flex;
     justify-content: center;
