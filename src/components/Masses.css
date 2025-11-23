@@ -1,31 +1,26 @@
-.massas__card {
-    width: 100%;
-}
-
 .massas__container {
     display: flex;
-    align-items: center;
-}
-
-.massas__header {
-    height: 2em;
 }
 
 .massas__title {
-    font-family: "Playfair Display", serif;
-    font-size:  clamp(0.9em, 4.5vw, 1em);
-    height: 2em;
-    padding: 4px 50px 4px 40px;
+    font-family: "Emilys Candy", serif;
+    font-size: clamp(0.9em, 4.5vw, 1em);
+    padding: 0 50px 0 40px;
     display: flex;
     align-items: center;
-    color: var(--texto_marrom);
-    background-color: var(--cor_principal);
+    color: var(--titulos);
+    background-color: var(--titulosFundo);
+}
+
+.massas__title h2 {
+    margin: 0;
+    font-weight: 400;
 }
 
 .massas__triangle {
-    border-top: 1.2em solid transparent;
-    border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid var(--cor_principal);
+    border-top: 1.42em solid transparent;
+    border-bottom: 1.42em solid transparent;
+    border-left: 1.42em solid var(--titulosFundo);
     flex-shrink: 0;
 }
 
@@ -41,6 +36,7 @@
     border-radius: 12px;
     padding: 50px 0 100px;
     position: relative;
+    box-shadow: 0 4px 2px #00000034;
 }
 
 .masses__image1, .masses__image2, .masses__fixed-image {

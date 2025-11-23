@@ -3,23 +3,24 @@
 }
 
 .candies__header {
-    background-color: var(--cor_principal);
+    background-color: var(--titulosFundo);
     text-align: center;
-    width: 70%;
+    width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .candies__head__container {
     display: flex;
+    color: var(--titulos);
 }
 
 .candies__header h2 {
-    margin: 5px 0 0 0;
+    margin: 0;
     font-family: "Emilys Candy", serif;
     font-weight: 400;
-    font-size: 1.8em;
-    height: 60%;
+    font-size: clamp(1.5em, 8vw, 1.7em);
 }
 
 .candies__container {
@@ -34,7 +35,7 @@
 .candies__triangle {
     border-top: 1.8em solid transparent;
     border-bottom: 1.8em solid transparent;
-    border-left: 1.8em solid var(--cor_principal);
+    border-left: 1.8em solid #FDAEC1;
     flex-shrink: 0;
 }
 
@@ -56,6 +57,7 @@
     position: relative;
     border-radius: 5px;
     padding-top: 20px;
+    box-shadow: 0 5px 2px #00000023;
 }
 
 .candies__image1 {
@@ -91,7 +93,7 @@
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    width: 62%;
+    width: 12em;
     margin: 0 auto;
     gap: 6px;
     margin-bottom: 15px;
@@ -108,16 +110,15 @@
 }
 
 .candies__price {
-    margin: 0 27%;
     font-size: clamp(0.8em, 4.4vw, 1em);
     color: #fff;
     display: flex;
-    width: 46%;
     padding-right: 3%;
+    justify-content: center;
 }
 
 .candies__price span {
-    background-color: #ffb7c4cc;
+    background-color: var(--precos_fundo);
     border-radius: 50px;
     padding: 10px;
     margin-bottom: 20px;
@@ -143,6 +144,7 @@
     border-collapse: collapse;
     margin: 0 5% 30px;
     width: 90%;
+    box-shadow: 0 3px 2px #00000034;
 }
 
 .docinhos__td {
@@ -150,7 +152,7 @@
     border-right: 1px dotted #fff;
     padding: 10px 40px;
     color: var(--textos_tabela);
-    font-size: 1.1em;
+    font-size: clamp(0.9em, 4.9vw, 1.1em);
 }
 
 .docinhos__td:last-child {

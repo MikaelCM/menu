@@ -1,8 +1,8 @@
 import './BolosDecor.css'
 
-const BolosDecor = ({cardTitle, cakeName, cakeDescription, itemsList, cakeImage, fig, textoAlt}) => {
+const BolosDecor = ({ cardTitle, cakeName, cakeDescription, itemsList, cakeImage, fig, textoAlt, fade }) => {
   return (
-    <div className="card_container">
+    <div className="card_container" data-aos={fade}>
 
         {cardTitle && (
             <header className='card__header'>

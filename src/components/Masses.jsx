@@ -1,8 +1,8 @@
 import './Masses.css'
 
-const Massas = ({ items, massesFigure, massesFigure2 }) => {
+const Massas = ({ items, massesFigure, massesFigure2, fade }) => {
   return (
-    <div className='massas__card'>
+    <div className='massas__card' data-aos={fade}>
 
       <div className="massas__container">
 

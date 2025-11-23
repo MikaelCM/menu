@@ -1,0 +1,77 @@
+.additional__header {
+    display: flex;
+    color: var(--titulos);
+}
+
+.additional__h2 {
+    background-color: var(--titulosFundo);
+    display: flex;
+    align-items: center;
+    padding: 5px 15px 5px 20px;
+    font-size: clamp(0.88em, 4.4vw, 0.95em);
+    font-family: "Emilys Candy", serif;
+    width: min-content;
+}
+
+.additional__h2 h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.additional__triangle {
+    border-top: 2.2em transparent solid;
+    border-left: 2.2em var(--titulosFundo) solid;
+    border-bottom: 2.2em transparent solid;
+}
+
+.additional__block {
+    background-color: var(--cor_principal);
+    position: relative;
+    margin: 20px 5% 40px;
+    color: var(--texto_marrom);
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 4px 2px #00000034;
+}
+
+.addit-block-fig1, .addit-block-fig2 {
+    position: absolute;
+    width: clamp(2.8em, 14.2vw, 3.2em);
+}
+
+.addit-block-fig1 {
+    bottom: -10px;
+    left: -20px;
+    filter: drop-shadow(1px -2px 2px #00000021);
+}
+
+.addit-block-fig2 {
+    top: -22px;
+    right: -13px;
+    filter: drop-shadow(-1px 5px 2px #00000021);
+}
+
+.addit-block-fig1 img, .addit-block-fig2 img {
+    width: 100%;
+}
+
+.addit__ul {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: clamp(1em, 5vw, 1.1em);
+}
+
+.addit__ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 15em;
+}
+
+.addit__heart {
+    font-size: 0.5em;
+}

@@ -1,38 +1,26 @@
-.card__container {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
 .card__header {
-    color: var(--texto_marrom);
     display: flex;
-    align-items: center;
+    color: var(--titulos);
 }
 
 .card__title {
-    background-color: #FDAEC1;
-    height: 2em;
+    background-color: var(--titulosFundo);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 4px 2%;
-    color: #fff;
+    padding: 0 10px 0 8px;
 }
 
 .card__header h2 {
-    font-weight: 300;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
     font-size: clamp(1.3em, 6.5vw, 1.5em);
-    font-family: "IBM Plex Serif", serif;
-    height: 1.2em;
-    display: flex;
-    align-items: end;
+    margin: 0;
 }
 
 .triangle{
-    border-top: 1.3em solid transparent;
-    border-bottom: 1.3em solid transparent;
-    border-left: 1.5em solid #FDAEC1;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1.5em solid var(--titulosFundo);
     flex-shrink: 0;
 }
 
@@ -79,13 +67,13 @@
 .bolos__table {
     background-color: var(--tabelas);
     font-size: clamp(0.95em, 4.5vw, 1.1em);
-    color: #B2878C;
     font-weight: 700;
     margin: 20px 5% 30px;
     color: var(--textos_tabela);
     border-collapse: collapse;
     width: 90%;
     border-radius: 10px;
+    box-shadow: 0 5px 2px #00000059;
 }
 
 .bolos__td {

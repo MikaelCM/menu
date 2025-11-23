@@ -3,22 +3,24 @@
 }
 
 .recheios__title {
-    font-family: "Playfair Display", serif;
-    font-size:  clamp(0.8em, 4.4vw, 1em);
-    padding: 6px 10px 6px 10px;
+    font-family: "Emilys Candy", serif;
+    font-size: clamp(0.88em, 4.4vw, 0.95em);
     display: flex;
-    color: var(--texto_marrom);
-    background-color: var(--cor_principal);
+    align-items: center;
+    color: var(--titulos);
+    background-color: var(--titulosFundo);
+    padding: 0 5px 0 8px;
 }
 
 .recheios__title h2 {
     margin: 0;
+    font-weight: 400;
 }
 
 .recheios__triangle {
-    border-top: 1.4em solid transparent;
-    border-bottom: 1.4em solid transparent;
-    border-left: 1.4em solid var(--cor_principal);
+    border-top: 1.7em solid transparent;
+    border-bottom: 1.7em solid transparent;
+    border-left: 1.7em solid var(--titulosFundo);
     flex-shrink: 0;
 }
 
@@ -30,6 +32,8 @@
     color: var(--texto_marrom);
     border-radius: 5px;
     position: relative;
+    font-weight: 700;
+    box-shadow: 0 4px 2px #00000034;
 }
 
 .recheios__figure1, .recheios__figure2 {

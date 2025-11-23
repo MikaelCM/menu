@@ -12,8 +12,10 @@ import Candies from './components/Candies';
 import Division from './components/Division';
 import Header from './components/Header';
 import Masses from './components/Masses';
-import RecheiosTrad from './components/Recheios';
+import Recheios from './components/Recheios';
 import PartyCandies from './components/PartyCandies';
+import PartyKit from './components/PartyKit';
+import Additional from './components/Additional';
 
 // Página
 function App() {
@@ -101,6 +103,7 @@ function App() {
     {id: 6, tipo: "CASADINHO"},
     {id: 7, tipo: "BRIGADEIRO BRANCO"},
   ];
+  
   const docinhosTraCento = "R$135,00";
 
 
@@ -161,17 +164,152 @@ function App() {
   // DOCES DE FESTA
   const miniCupcakes = [
     {id: 0, cakeType: "Mini Cupcake", price: "R$4,00"},
-    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$7,00"},
-    {id: 2, cakeType: "Cupcake", price: "R$10,00"},
-    {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$9,00"},
+    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,50"},
+    {id: 2, cakeType: "Cupcake", price: "R$7,00"},
+    {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$10,00"},
   ];
 
 
-  const miniBrownie = [
-    {id: 0, cakeType: "Doce de leite", cakeType2: "Brigadeiro", cakeType3: "Ninho com Nutella", price: "R$4,50 - 1 unidade & R$79,99 - 20 unidades"},
+  const miniBrownie = ([{ 
+    id: 0, 
+    cakeType: "Doce de leite", 
+    cakeType2: "Brigadeiro", 
+    cakeType3: "Ninho com Nutella", 
+    price: "R$4,50 - 1 unidade",
+  }]);
+
+  const mainBrownieStyle = {
+    transform: "rotate(-4deg)",
+  };
+
+  const party_illuFig1_style = {
+    /*
+    left: "-15px",
+    top: "-40px",
+    transform: "rotate(-10deg)",
+    filter: "drop-shadow(1px 3px 1px #0000003d)",
+    */
+  };
+
+  const party_illuFig2_style = {
+    left: "-5px",
+    bottom: "-30px",
+    transform: "rotate(110deg)"
+  };
+
+
+  // KIT FESTA
+  const kit1 = [
+    {id: 0, quant: 1, nome: "Bento Cake"},
+    {id: 1, quant: 10, nome: "Docinhos"},
+    {id: 2, quant: 20, nome: "Salgadinhos"},
   ];
+
+  const kit1Preco = "100,00";
+
+  const fig1PartyKitStyle = {
+    top: "-45px",
+    left: "-12px",
+    filter: "drop-shadow(1px 2px 2px #00000054)",
+  };
+
+
+  const kit2 = [
+    {id: 0, quant: 1, nome: "Bolo 1kg"},
+    {id: 1, quant: 30, nome: "Docinhos"},
+    {id: 2, quant: 50, nome: "Salgadinhos"},
+  ];
+
+  const kit2Preco = "170,00"
+
+  const fig2PartyKitStyle = {
+    top: "-25px",
+    right: "-25px",
+    filter: "drop-shadow(-1px 2px 2px #00000054)"
+  };
+
+
+  const kit3 = [
+    {id: 0, quant: 1, nome: "Bolo 1,5kg"},
+    {id: 1, quant: 59, nome: "Docinhos"},
+    {id: 2, quant: 70, nome: "Salgadinhos"},
+  ];
+
+  const kit3Preco = "250,00";
+
+  const fig3PartyKitStyle = {
+    top: "-25px",
+    left: "-12px",
+    filter: "drop-shadow(1px 2px 2px #00000054)",
+    width: "clamp(3em, 15vw, 3.5em)"
+  };
+
+
+  const kit4 = [
+    {id: 0, quant: 1, nome: "Bento Cake"},
+    {id: 1, quant: 50, nome: "Docinhos"},
+    {id: 2, quant: 170, nome: "Salgadinhos"},
+  ];
+
+  const kit4Preco = "310,00";
+
+  const fig4PartyKitStyle = {
+    bottom: "-25px",
+    left: "-23px",
+    filter: "drop-shadow(3px 0 2px #00000054)",
+    width: "clamp(4.5em, 22vw, 5em)"
+  };
+
+
+  const kit5 = [
+    {id: 0, quant: 1, nome: "Bolo 3kg"},
+    {id: 1, quant: 100, nome: "Docinhos"},
+    {id: 2, quant: 150, nome: "Salgadinhos"},
+  ];
+
+  const kit5Preco = "460,00";
+
+  const fig5PartyKitStyle = {
+    top: "-30px",
+    right: "-12px",
+    filter: "drop-shadow(-1px 2px 2px #0000002c)",
+    width: "clamp(3.5em, 17vw, 3.8em)"
+  };
+
+  // ADICIONAIS
+  const additionalFirst = [
+    {id: 0, info: "Topo de bolo com flores artificiais ou de papel"},
+    {id: 1, info: "Topo de bolo com bexiga/balão de aniversário"},
+    {id: 2, info: "Topo de bolo elaborado (flores, etc...)"},
+    {id: 3, info: "Decoração com glitter: a partir de R$10,00 a uni."},
+    {id: 4, info: "Papel de arroz: A partir de R$15,00"},
+  ];
+
+
+  const additionalSecond = [
+    {id: 0, info: "Prazo para encomenda: 3 dias úteis."},
+    {id: 1, info: "Encomendas só são confirmadas após o envio do comprovante de 50% do sinal."},
+    {id: 2, info: "Não trabalhamos aos domingos e segunda-feiras."},
+    {id: 3, info: "Formas de pagamento: à vista, débito, crédito, link de pagamento e pix.(LINK DE PAGAMENTO E CARTÃO DE CRÉDITO: À VISTA OU PARCELADO COM ACRÉSCIMO POR CONTA DO CLIENTE)."},
+    {id: 4, info: "Não realizamos entregas, apenas retirada: Rua 21 norte, Águas Claras - Brasília DF."},
+    {id: 5, info: "Entregas podem ser feitas via Uber Flash, por total responsabilidade do cliente."},
+    {id: 6, info: "Não vendemos fiado ou à prazo."},
+    {id: 7, info: [<strong key={7}>HORÁRIO DE RETIRADA DE <time>10H ÀS 21H.</time></strong>]},
+  ];
+
+
+  const additFig3Style = {
+    bottom: "-20px",
+    left: "-15px"
+  };
+
+  const additFig4Style = {
+    top: "-67px",
+    width: "clamp(3.2em, 17vw, 4em)"
+  };
 
   return (
+    <>
     <main>
       {/* SEÇÃO DO MENU */}
       <section className='menu-section' data-aos="zoom-out">
@@ -213,7 +351,7 @@ function App() {
       <Division />
 
       {/* SEÇÃO DE BOLOS DECORADOS */}
-      <section className='cakes-section' data-aos="fade-left">
+      <section className='cakes-section'>
         <Header />
 
         <BolosDecor 
@@ -230,13 +368,15 @@ function App() {
           fig='./bolosDecor_cupcake.png'
 
           textoAlt="Bolo decorado"
+
+          fade="fade-left"
         />
       </section>
 
       <Division />
 
       {/* SEÇÃO DE MASSAS */}
-      <section className='masses-section' data-aos="fade-right">
+      <section className='masses-section'>
         <Header />
 
         <Masses 
@@ -245,6 +385,8 @@ function App() {
           massesFigure={"./masses_strawberry.png"} 
 
           massesFigure2={'./masses_gloves.png'}
+
+          fade="fade-right"
         />
 
       </section>
@@ -252,10 +394,10 @@ function App() {
       <Division />
 
       {/* SEÇÃO DE RECHEIOS */}
-      <section className='filling-section' data-aos="slide-left">
+      <section className='filling-section'>
         <Header />
 
-        <RecheiosTrad
+        <Recheios
           title="RECHEIOS TRADICIONAIS" 
 
           recheios={recheiosTradicionais} 
@@ -263,10 +405,12 @@ function App() {
           recheiosFigure1={'./flower.png'} 
 
           recheiosFigure2={'./piping-bag.png'} 
+
+          fade="slide-left"
         />
 
 
-        <RecheiosTrad 
+        <Recheios
           title="RECHEIOS ESPECIAIS"
 
           recheios={recheiosEspeciais} 
@@ -307,11 +451,11 @@ function App() {
 
           candiesImage3="./choco-strawbe-doces.png"
 
-          dataAOS="fade-left"
+          fade="fade-left"
         />
 
         <Candies 
-          candiesType="Docinhos Gourmet"
+          candiesType="Docinhos Especiais"
 
           candiesList={docinhosGour}
 
@@ -331,7 +475,7 @@ function App() {
 
           candiesImage3="./bisc-doces.png"
 
-          dataAOS="fade-right"
+          fade="fade-right"
         />
 
         <Candies 
@@ -353,7 +497,7 @@ function App() {
 
           candiesImage3="./doce-doces.png"
 
-          dataAOS="fade-left"
+          fade="fade-left"
 
           listaUni={docinhosListaUni}
         />
@@ -363,7 +507,7 @@ function App() {
       <Division />
 
       {/* SEÇÃO DE DOCES DE FESTA */}
-      <section className='partyCandies-section'>
+      <section>
         <Header />
 
         <PartyCandies 
@@ -385,17 +529,148 @@ function App() {
         <PartyCandies 
           partyCand__h3="Mini Brownie"
 
+          mainFig='./partyCand_brownie1.png'
+
+          textoAlt="Mini Brownie"
+
+          partyCandMainFigStyle={mainBrownieStyle}
+
+          partyCand__caption="acompanha forminha: escolher a cor"
+
           partyCandies={miniBrownie}
 
-          partyCand__illuFig1='./partyCandies_cupcake.png'
+          partyCand__illuFig1_style={party_illuFig1_style}
 
-          partyCand__illuFig2='./partyCandies_cake.png'
+          partyCand__illuFig1='./partyCand_brownie-fig.png'
+
+          partyCand_illuFig1_style={party_illuFig1_style}
+
+          partyCand__illuFig2='./partyCand_chocolate.png'
+
+          partyCand_illuFig2_style={party_illuFig2_style}
 
           minimumText="MÍNIMO 15 UNIDADES"
         />
       </section>
 
+      <Division />
+
+      {/* SEÇÃO DO KIT FESTA */}
+      <section>
+        <Header />
+
+        <PartyKit
+          title="KIT FESTA"
+        
+          topInformations1="BOLO E DOCINHOS ESPECIAIS NÃO SÃO INCLUSOS NO VALOR."
+        />
+
+        <div className='partyKit__compononents'> {/* usar essa div para fazer um grid em telas maiores que de um celular */}
+          <PartyKit
+            kitTitle="Kit 1"
+
+            kitList={kit1}
+
+            kitPreco={kit1Preco}
+
+            fig='./partyKit-fig1.png'
+
+            figStyle={fig1PartyKitStyle}
+          />
+
+          <PartyKit
+            kitTitle="Kit 2"
+
+            kitList={kit2}
+
+            kitPreco={kit2Preco}
+
+            fig='./partyKit-fig2.png'
+
+            figStyle={fig2PartyKitStyle}
+          />
+
+          <PartyKit
+            kitTitle="Kit 3"
+
+            kitList={kit3}
+
+            kitPreco={kit3Preco}
+
+            fig='./partyKit-fig3.png'
+
+            figStyle={fig3PartyKitStyle}
+          />
+
+          <PartyKit
+            kitTitle="Kit 4"
+
+            kitList={kit4}
+
+            kitPreco={kit4Preco}
+
+            fig='./partyKit-fig4.png'
+
+            figStyle={fig4PartyKitStyle}
+          />
+          
+          <PartyKit
+            kitTitle="Kit 5"
+
+            kitList={kit5}
+
+            kitPreco={kit5Preco}
+
+            fig='./partyKit-fig5.png'
+
+            figStyle={fig5PartyKitStyle}
+
+            margin={{marginBottom: "60px"}} // Apenas para dar um espaçamento entre o último elemento e a divisão
+          />
+        </div>
+      </section>
+
+      <Division />
+
+      <section>
+        <Header />
+
+        <Additional 
+          title="ADICIONAIS"
+
+          additList={additionalFirst}
+
+          fig1='./addit-fig1.png'
+
+          fig2='./addit-fig2.png'
+
+          fade="zoom-in"
+        />
+
+        <Additional 
+          title="INFORMAÇÕES IMPORTANTES"
+
+          additList={additionalSecond}
+
+          fig1='./addit-fig3.png'
+
+          fig1Style={additFig3Style}
+
+          fig2='./addit-fig4.png'
+
+          fig2Style={additFig4Style}
+
+          fade="zoom-in"
+        />
+      </section>
+
+      <Division />
     </main>
+
+    <footer>
+      
+    </footer>
+    </>
   )
 }
 

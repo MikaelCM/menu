@@ -1,6 +1,6 @@
 import './Candies.css'
 
-const Candies = ({title, title__span, candiesType, candiesList, cento, candiesImage1, textoAlt, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, dataAOS, listaUni}) => {
+const Candies = ({ title, title__span, candiesType, candiesList, cento, candiesImage1, textoAlt, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, fade, listaUni }) => {
     return (
         <div className="candies__card">
 
@@ -13,7 +13,7 @@ const Candies = ({title, title__span, candiesType, candiesList, cento, candiesIm
                 <div className={title && "candies__triangle"}></div>
             </header>
 
-            <div className="candies__container" data-aos={dataAOS}>
+            <div className="candies__container" data-aos={fade}>
                 <div id="doces__h3">
                     <h3>{candiesType}</h3>
                 </div>
@@ -54,7 +54,7 @@ const Candies = ({title, title__span, candiesType, candiesList, cento, candiesIm
             </div>
 
             {listaUni && (
-                <div className='tableAndImage__cont'>
+                <div className='tableAndImage__cont' data-aos={fade}>
 
                     <div className='docinhos-mixer__cont'>
                         <img src="./docinhos_mixer.png" alt="" />

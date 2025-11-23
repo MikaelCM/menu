@@ -1,0 +1,141 @@
+.partyKit-head__container {
+    display: flex;
+}
+
+.partyKit__header {
+    background-color: var(--titulosFundo);
+    color: var(--titulos);
+    padding: 0 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.partyKit__header h2 {
+    margin: 0;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-size: clamp(1.5em, 7vw, 1.7em);
+}
+
+.partyKit__triangle {
+    border-top: 1.5em solid transparent;
+    border-left: 1.5em solid var(--titulosFundo);
+    border-bottom: 1.5em solid transparent;
+}
+
+.TopInformations__cont {
+    display: flex;
+    margin: 30px 0 0;
+    max-width: 513px;
+}
+
+.TI, .TI2 {
+    background-color: var(--titulosFundo);
+    color: var(--titulos);
+    font-size: clamp(0.8em, 4vw, 0.9em);
+    padding: 0 0 0 15px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.TI p, .TI2 p {
+    margin: 0;
+    padding: 0;
+}
+
+.TI__triangle {
+    border-top: 1.5em solid transparent;
+    border-left: 1.5em solid var(--titulosFundo);
+    border-bottom: 1.5em solid transparent;
+}
+
+.TI2__cont {
+    display: flex;
+    justify-content: end;
+}
+
+.TI2 {
+    background-color: var(--titulosFundo);
+    color: var(--titulos);
+    width: 70%;
+    padding: 0 10px 0 15px;
+    justify-content: end;
+    align-items: center;
+}
+
+.TI2__triangle {
+    border-top: 2em solid transparent;
+    border-right: 2em solid var(--titulosFundo);
+    border-bottom: 2em solid transparent;
+}
+
+.partyKit__price-h3-list__cont {
+    color: var(--texto_marrom);
+    margin: 50px 0 40px;
+}
+
+.partyKit__h3 {
+    font-family: "Imperial Script", cursive;
+    text-align: center;
+    font-size: clamp(2.1em, 10vw, 2.2em);
+}
+
+.partyKit__h3 h3 {
+    margin: 0;
+}
+
+.partyKit__list-price-image__cont {
+    background-color: var(--cor_principal);
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 30px 0;
+    box-shadow: 0 2px 2px #00000034;
+}
+
+.partyKit__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 3px;
+}
+
+.partyKit__list li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: clamp(1em, 5vw, 1.2em);
+    font-weight: 700;
+    width: 8.4em;
+}
+
+.partyKit__heart {
+    font-size: 0.5em;
+}
+
+.partyKit__price {
+    position: absolute;
+    background-color: var(--precos_fundo);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    right: 15px;
+    bottom: -25px;
+    color: #fff;
+    font-size: clamp(0.9em, 4.5vw, 1em);
+    box-shadow: 0 1px 0 #0000003d;
+}
+
+.partyKit__fig {
+    position: absolute;
+    width: clamp(4.2em, 21vw, 4.5em);
+    /* Alterar o posicionamento e sombras com variáveis no App.jsx (a partir da 209ª linha) */
+}
+
+.partyKit__fig img {
+    width: 100%;
+}

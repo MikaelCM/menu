@@ -1,21 +1,21 @@
 import './PartyCandies.css'
 
-const PartyCandies = ({Title, partyCandies, partyCand__h3, minimumText, mainFig, textoAlt, partyCand__illuFig1, partyCand__illuFig2}) => {
+const PartyCandies = ({Title, partyCand__h3, minimumText ,partyCand__caption, mainFig, partyCandMainFigStyle, textoAlt,  partyCandies, partyCand__illuFig1, partyCand__illuFig1_style, partyCand__illuFig2, partyCand_illuFig2_style}) => {
 
     // Se a lista tiver mais de um tipo de doce, imprime uma lista desses doces, senão, retorna o array normal de doces
     const isCandyList = (candyOfCandiesType) => {
         if (candyOfCandiesType.cakeType2) {
             return (
-                <ul>
-                    <li>
+                <ul className='partyCand__ul'>
+                    <li className='partyCand_listItem'>
                         {candyOfCandiesType.cakeType} 
                     </li>
 
-                    <li>
+                    <li className='partyCand_listItem'>
                         {candyOfCandiesType.cakeType2} 
                     </li>
 
-                    <li>
+                    <li className='partyCand_listItem'>
                         {candyOfCandiesType.cakeType3} 
                     </li>
                 </ul>
@@ -31,7 +31,7 @@ const PartyCandies = ({Title, partyCandies, partyCand__h3, minimumText, mainFig,
             <header className='partyCand-head__container'>
 
                 <div className='partyCand__header'>
-                    <h2>DOCES DE FESTA</h2>
+                    <h2>{Title}</h2>
                     <span>MÍNIMO DE 10 UNIDADES</span>
                 </div>
 
@@ -49,36 +49,57 @@ const PartyCandies = ({Title, partyCandies, partyCand__h3, minimumText, mainFig,
                 )}
             </div>
 
-                <div id='main-figure'>
-                    <img src={mainFig} alt={textoAlt} />
+                {mainFig && (
+                    <div id='main-figure' style={partyCandMainFigStyle}>
+                        <img src={mainFig} alt={textoAlt}/>
 
-                    <div className='partyCand__fig1'>
-                        <img src={partyCand__illuFig1} alt="" />
+                        <div className='partyCand__fig1' style={partyCand__illuFig1_style}>
+                            <img src={partyCand__illuFig1} alt="" />
+                        </div>
                     </div>
-                </div>
+                )}
+                
 
             <table className='partyCand__table'>
                 <tbody className='partyCand__tbody'>
 
+                    {partyCand__caption && (
+                        <tr >
+                            <td colSpan={2}  className='partyCand__caption'>{partyCand__caption}</td>
+                        </tr>
+                    )}
+
                     {partyCandies.map(candy => (
                         <tr key={candy.id}>
                             <td className='partyCand__td'>
-                                {/* FUNÇÃO isCandyList */}
+
+                                {/* FUNÇÃO isCandyList DA LINHA 6 */}
                                 {isCandyList(candy)} 
+                                
                             </td>
 
-                            <td className='partyCand__td'>
-                                {candy.price}
+                            {candy.price && (
+
+                                <td className='partyCand__td partyCandprices'>
+
+                                <span className='partyCand__firstPrice'>{candy.price}</span>
+                                
+                                {candy.price2 && (
+                                    <div className='partyCand__secondPrice'>
+                                        {candy.price2}
+                                    </div>
+                                )}
+                                
                             </td>
+                            )}
+                            
                         </tr>
                     ))}
 
                 </tbody>
             </table>
 
-            
-
-            <div className='partyCand__fig2'>
+            <div className='partyCand__fig2' style={partyCand_illuFig2_style}>
                 <img src={partyCand__illuFig2} alt="" />
             </div>
 
