@@ -31,7 +31,7 @@ export const fig2PartyKitStyle = {
 
 export const kit3 = [
     {id: 0, quant: 1, nome: "Bolo 1,5kg"},
-    {id: 1, quant: 59, nome: "Docinhos"},
+    {id: 1, quant: 50, nome: "Docinhos"},
     {id: 2, quant: 70, nome: "Salgadinhos"},
 ];
 
