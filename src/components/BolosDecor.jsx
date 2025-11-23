@@ -17,36 +17,37 @@ const BolosDecor = ({ cardTitle, cakeName, cakeDescription, itemsList, cakeImage
 
         <div className='cake-informations'>
             
-            <div className='cake__image'>
-                <img src={cakeImage} alt={textoAlt} />
-            </div>
+            <div className='cake__container'>
 
-            <div className='h3-table-img__cont'>
-                <h3 className={!cakeName && "cakeNameDontShow"}>{cakeName}:</h3>
-
-                <p className={!cakeName && "cakeDescriptionMarginTop"}>{cakeDescription}</p>
-
-                <table className="bolos__table">
-                    <tbody className='bolos__tbody'>
-
-                        {itemsList.map(item => (
-                            <tr key={item.id}>
-                                <td className='bolos__td'>
-                                    {item.nome}
-                                    {item.tamanho} 
-                                </td>
-
-                                <td className='bolos__td'>{item.fatias}</td>
-                            </tr>
-                        ))}
-
-                    </tbody>
-                </table>
-
-                <div className='bolosDecor__img'>
-                    <img src={fig} alt="" />
+                <div className='cake__image'>
+                    <img src={cakeImage} alt={textoAlt} />
                 </div>
 
+                <div className='p-table-img__cont'>
+
+                    <p className={!cakeName && "cakeDescriptionMarginTop"}>{cakeDescription}</p>
+                    
+                    <table className="bolos__table">
+                        <tbody className='bolos__tbody'>
+                            {itemsList.map(item => (
+
+                                <tr key={item.id}>
+                                    <td className='bolos__td'>
+                                        {item.nome}
+                                        {item.tamanho}
+                                    </td>
+                                    <td className='bolos__td'>{item.fatias}</td>
+                                </tr>
+                                
+                            ))}
+                        </tbody>
+                    </table>
+
+                    <div className='bolosDecor__img'>
+                        <img src={fig} alt="" />
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

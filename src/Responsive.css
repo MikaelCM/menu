@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+    main {
+        
+
+    }
+    
+    .card__header {
+        display: flex;
+        color: var(--titulos);
+    }
+
+    .card__title {
+        background-color: var(--titulosFundo);
+        display: flex;
+        align-items: center;
+        padding: 0 10px 0 8px;
+    }
+
+    .card__header h2 {
+        font-family: "Emilys Candy", serif;
+        font-weight: 400;
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .triangle {
+        border-top: 1.5em solid transparent;
+        border-bottom: 1.5em solid transparent;
+        border-left: 1.5em solid var(--titulosFundo);
+        flex-shrink: 0;
+    }
+
+    .cake__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cake__image {
+        width: 17em;
+        height: 20em;
+        margin: 30px 50px 0;
+        border: 2px solid var(--cor_principal);
+        background-color: var(--cor_principal);
+        padding: 4px 4px 15px;
+        transform: rotate(4deg);
+        box-shadow: 0 7px 10px #00000056;
+    }
+
+    .cake__image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cakeNameDontShow {
+        display: none;
+    }
+
+    .cakeDescriptionMarginTop {
+        padding-top: 40px;
+    }
+
+    .p-table-img__cont {
+        position: relative;
+    }
+
+    .cake-informations p {
+        text-align: center;
+        color: var(--texto_marrom);
+        max-width: 240px;
+        margin: 0 auto;
+    }
+
+    .heart {
+        font-size: 0.5em;
+        vertical-align: middle;
+    }
+
+    .bolos__table {
+        background-color: var(--tabelas);
+        font-size: clamp(0.95em, 4.5vw, 1.1em);
+        font-weight: 700;
+        margin: 20px 20px 30px 0;
+        color: var(--textos_tabela);
+        border-collapse: collapse;
+        width: 20em;
+        border-radius: 10px;
+        box-shadow: 0 5px 2px #00000059;
+    }
+
+    .bolos__td {
+        border-right: 1px dotted #fff;
+        border-bottom: 1px dotted #fff;
+        padding: 15px 20px;
+    }
+
+    .bolos__td:last-child {
+        border-right: none;
+    }
+
+    .bolos__table tr:last-child td {
+        border-bottom: none;
+    }
+
+    .bolosDecor__img {
+        width: clamp(2.9em, 12vw, 3em);
+        position: absolute;
+        top: 2.4em;
+        right: 18px;
+        filter: drop-shadow(0 2px 2px #00000071);
+    }
+
+    .bolosDecor__img img {
+        width: 100%;
+    }
+}

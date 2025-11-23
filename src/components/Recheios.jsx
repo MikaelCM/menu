@@ -1,6 +1,6 @@
 import './Recheios.css'
 
-const Recheios = ({ title, recheios, recheiosFigure1, recheiosFigure2, figure1Style, figure2Style, fade }) => {
+const Recheios = ({ title, recheios, recheiosFigure1, recheiosFigure2, figure1Style, figure2Style, recheiosPreco, fade }) => {
   return (
     <div className='recheios__card' data-aos={fade}>
         <header className='recheios__header'>
@@ -46,6 +46,10 @@ const Recheios = ({ title, recheios, recheiosFigure1, recheiosFigure2, figure1St
 
             ))}
             </ul>
+
+            <div className='recheiosPreco'>
+                <span>{recheiosPreco}</span>
+            </div>
         </div>
     </div>
   )

@@ -1,3 +1,24 @@
+/* Largura da barra */
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra lateral */
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+    background: #BDA2A8; /* cor do fundo */
+    border-radius: 10px;
+}
+
+/* A parte que se move (thumb) */
+::-webkit-scrollbar-thumb {
+    background: var(--titulosFundo);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D291A0;
+}
+
 .links {
     display: flex;
     flex-direction: column;
@@ -7,7 +28,7 @@
 .link_whatsapp, .link_instagram {
     background-color: #ffc1cd;
     border-radius: 30px;
-    font-size: 1.25em;
+    font-size: clamp(1.25em, 5vw, 1.4em);
     padding: 12px 2.6em;
     transition: 0.1s ease-out;
 }
@@ -42,7 +63,7 @@
 }
 
 .mixer_image {
-    width: clamp(10em, 70vw, 30em);
+    width: clamp(10em, 70vw, 20em);
     position: absolute;
     bottom: -20px;
     left: -30px;
@@ -54,19 +75,19 @@
 }
 
 .mixer_paragraph {
-    background-color: #FFD7DF;
+    background-color: var(--cor_principal);
     font-size: clamp(0.6em, 3vw, 1em);
     display: flex;
     justify-content: end;
     align-items: center;
     padding-right: 20px;
-    color: #B2878C;
+    color: var(--texto_marrom);
 }
 
 .menu__title {
-    background-color: #FDAEC1;
+    background-color: var(--titulosFundo);
     color: #fff;
-    font-size: 1.2em;
+    font-size: clamp(1.2em, 7vw, 1.4em);
     text-align: center;
     display: flex;
     justify-content: center;
