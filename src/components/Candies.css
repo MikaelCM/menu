@@ -5,10 +5,10 @@
 .candies__header {
     background-color: var(--titulosFundo);
     text-align: center;
-    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 45px;
 }
 
 .candies__head__container {
@@ -23,19 +23,19 @@
     font-size: clamp(1.5em, 8vw, 1.7em);
 }
 
-.candies__container {
-    margin-top: 30px;
-}
-
 .candies__header span {
     font-size: 0.7em;
     font-weight: 600;
 }
 
+.candies__container {
+    margin-top: 30px;
+}
+
 .candies__triangle {
     border-top: 1.8em solid transparent;
     border-bottom: 1.8em solid transparent;
-    border-left: 1.8em solid #FDAEC1;
+    border-left: 1.8em solid var(--titulosFundo);
     flex-shrink: 0;
 }
 
@@ -58,12 +58,6 @@
     border-radius: 5px;
     padding-top: 20px;
     box-shadow: 0 5px 2px #00000023;
-}
-
-.candies__image1 {
-    width: clamp(8.3em, 42vw, 9em);
-    margin: 0 auto 20px;
-    filter: drop-shadow(0 3px 5px #000000b4);
 }
 
 .candies__image2 {

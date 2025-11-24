@@ -19,7 +19,7 @@ import { urlZap } from './data/contato'
 
 import { bolosTradicionais, bolosTradicionaisDescricao } from './data/bolosDecorados'
 
-import { docinhosTra, docinhosTraCento, docinhosEsp, docinhosEspCento, EspImage1DivStyle, EspImage2DivStyle, EspImage3DivStyle, docinhosPersoCento, persoImage1DivStyle, persoImage2DivStyle, persoImage3DivStyle, docinhosListaUni } from './data/doces'
+import { docinhosTra, candiesImage1, image1DivStyleImg, docinhosTraCento, docinhosEsp, docinhosEspCento, EspImage1DivStyle, EspImage2DivStyle, EspImage3DivStyle, docinhosPersoCento, persoImage1DivStyle, persoImage2DivStyle, persoImage3DivStyle, docinhosListaUni } from './data/doces'
 
 import { massas } from './data/massas'
 
@@ -193,6 +193,12 @@ function App() {
 
           cento={docinhosTraCento}
 
+          candies_responsive="tradImg1Respo"
+
+          image1DivStyle={candiesImage1}
+
+          image1DivStyleImg={image1DivStyleImg}
+
           candiesImage1='./brigadeiros-doces.png'
 
           textoAlt="Doces tradicionais"
@@ -211,7 +217,11 @@ function App() {
 
           cento={docinhosEspCento}
 
+          candies_responsive="espImg1Respo"
+
           image1DivStyle={EspImage1DivStyle}
+
+          image1DivStyleImg={image1DivStyleImg}
 
           image2DivStyle={EspImage2DivStyle}
 
@@ -233,7 +243,11 @@ function App() {
 
           cento={docinhosPersoCento}
 
+          candies_responsive="persoImg1Respo"
+
           image1DivStyle={persoImage1DivStyle}
+
+          image1DivStyleImg={image1DivStyleImg}
 
           image2DivStyle={persoImage2DivStyle}
 

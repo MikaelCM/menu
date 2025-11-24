@@ -9,7 +9,17 @@ export const docinhosTra = [
     {id: 6, tipo: "CASADINHO"},
     {id: 7, tipo: "BRIGADEIRO BRANCO"},
 ];
-  
+
+export const candiesImage1 = {
+    width: "clamp(8.3em, 40vw, 9.7em)",
+    margin: "0 auto 20px",
+    filter: "drop-shadow(0 3px 5px #000000b4)",
+}
+
+export const image1DivStyleImg = {
+    width: "100%",
+}
+
 export const docinhosTraCento = "R$140,00";
 
 
@@ -21,7 +31,7 @@ export const docinhosEsp = [
     {id: 4, tipo: "OREO"},
 ];
 
-export const docinhosEspCento = "R$150,00";
+export const docinhosEspCento = "R$160,00";
 
 export const EspImage1DivStyle = {
     width: "clamp(9em, 45vw, 10em)",
@@ -37,7 +47,7 @@ export const EspImage2DivStyle = {
 export const EspImage3DivStyle = {
     width: "clamp(5em, 25vw, 5.4em)",
     right: "-33px",
-    bottom: "-40px"
+    bottom: "-40px",
 }
 
 
@@ -45,18 +55,19 @@ export const docinhosPersoCento = "R$220,00";
 
 export const persoImage1DivStyle = {
     filter: "drop-shadow(0 2px 4px #0000007e)",
-    width: "clamp(9em, 45vw, 9.5em)"
+    width: "clamp(9em, 45vw, 9.5em)",
+    margin: "0 auto 20px",
 };
 
 export const persoImage2DivStyle = {
     width: "clamp(4em, 20vw, 4.3em)",
     bottom: "-38px",
-    left: "-18px"
+    left: "-18px",
 };
 
 export const persoImage3DivStyle = {
     width: "clamp(5.5em, 26vw, 5.8em)",
-    right: "-12px"
+    right: "-12px",
 };
 
 

@@ -1,17 +1,21 @@
 import './Candies.css'
 
-const Candies = ({ title, title__span, candiesType, candiesList, cento, candiesImage1, textoAlt, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, fade, listaUni }) => {
+const Candies = ({ title, title__span, candiesType, candiesList, cento, candiesImage1, image1DivStyleImg, candies_responsive, textoAlt, image1DivStyle, image2DivStyle, image3DivStyle, candiesImage2, candiesImage3, fade, listaUni }) => {
     return (
         <div className="candies__card">
 
-            <header className='candies__head__container'>
-                <div className={title && "candies__header"}>
-                    <h2>{title}</h2>
-                    <span>{title__span}</span>
-                </div>
+            {title && (
+               <header className='candies__head__container'>
 
-                <div className={title && "candies__triangle"}></div>
-            </header>
+                    <div className="candies__header">
+                        <h2>{title}</h2>
+                        <span>{title__span}</span>
+                    </div>
+
+                    <div className="candies__triangle"></div>
+
+                </header> 
+            )}
 
             <div className="candies__container" data-aos={fade}>
                 <div id="doces__h3">
@@ -20,14 +24,14 @@ const Candies = ({ title, title__span, candiesType, candiesList, cento, candiesI
 
                 <div className="candyList__container">
 
-                    <div className='candies__image1' style={image1DivStyle}>
-                        <img src={candiesImage1} alt={textoAlt}/>
+                    <div className={candies_responsive} style={image1DivStyle}>
+                        <img src={candiesImage1} alt={textoAlt} style={image1DivStyleImg}/>
                     </div>
 
                     {candiesList && (
                         <ul className='candyList'>
                             {candiesList.map(candy => (
-                                <li key={candy.tipo}>
+                                <li key={candy.id}>
 
                                     <span className='candy__heart'>{'\u{2764}'}</span>
 
