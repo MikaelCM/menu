@@ -9,7 +9,7 @@ export const recheiosTradicionais = [
     {id: 6, recheio: "Dois amores"},
 ];
 
-export const recheiosTradPreco = "R$85,00 - 1 uni.";
+export const recheiosTradPreco = "R$85,00 - 1kg";
 
 
 export const recheiosEspeciais = [
@@ -21,7 +21,7 @@ export const recheiosEspeciais = [
     {id: 5, recheio: "Chocolate meio amargo"},
 ];
 
-export const recheiosEspPreco = "R$95,00 - 1 uni.";
+export const recheiosEspPreco = "R$95,00 - 1kg";
 
 // Alterar as imagens dos recheios em estilo inline passadas como prop
 export const blueCupcake = {

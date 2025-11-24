@@ -23,7 +23,7 @@ import { docinhosTra, docinhosTraCento, docinhosEsp, docinhosEspCento, EspImage1
 
 import { massas } from './data/massas'
 
-import { recheiosTradicionais, recheiosEspeciais, blueCupcake, berliner, recheiosTradPreco, recheiosEspPreco } from './data/recheios'
+import { recheiosTradicionais, recheiosEspeciais, blueCupcake, berliner, recheiosTradPreco, recheiosEspPreco } from './data/recheiosData'
 
 import { miniCupcakes, miniBrownie, mainBrownieStyle, party_illuFig1_style, party_illuFig2_style } from './data/docesDeFesta'
 
