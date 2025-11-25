@@ -33,7 +33,15 @@
     .menu__title {
         background-color: var(--titulosFundo);
         color: var(--titulos);
+        font-size: 1.9em;
+    }
+    
+    .link_whatsapp, .link_instagram {
+        background-color: #ffc1cd;
+        border-radius: 30px;
         font-size: 1.6em;
+        padding: 12px 2.6em;
+        transition: 0.1s ease-out;
     }
 
 
