@@ -1,24 +1,30 @@
-/* Largura da barra */
+/* 
+
+SCROLLBAR 
+
+*/
 ::-webkit-scrollbar {
-    width: 10px; /* largura da barra lateral */
+    width: 10px;
 }
 
-/* Fundo da barra */
 ::-webkit-scrollbar-track {
-    background: #BDA2A8; /* cor do fundo */
-    border-radius: 10px;
+    background: #919191;
 }
 
-/* A parte que se move (thumb) */
 ::-webkit-scrollbar-thumb {
     background: var(--titulosFundo);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #D291A0;
+    background: #9e5064c5;
 }
 
+/*
+
+MENU
+
+*/
 .links {
     display: flex;
     flex-direction: column;
@@ -86,8 +92,8 @@
 
 .menu__title {
     background-color: var(--titulosFundo);
-    color: #fff;
-    font-size: clamp(1.2em, 6vw, 1.3em);
+    color: var(--titulos);
+    font-size: clamp(1.2em, 6.5vw, 1.3em);
     text-align: center;
     display: flex;
     justify-content: center;

@@ -51,7 +51,7 @@ section {
 .masses-section {
     background: url('/masses-background.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 a {

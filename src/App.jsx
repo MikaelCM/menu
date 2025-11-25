@@ -288,6 +288,8 @@ function App() {
           partyCand__illuFig1='./partyCandies_cupcake.png'
 
           partyCand__illuFig2='./partyCandies_cake.png'
+
+          partyCandImg2Respo="partyCand__fig2"
         />
 
         <PartyCandies 
@@ -312,6 +314,8 @@ function App() {
           partyCand__illuFig2='./partyCand_chocolate.png'
 
           partyCand_illuFig2_style={party_illuFig2_style}
+
+          partyCandImg2Respo="partyCand__fig2-chocolate"
 
           minimumText="MÍNIMO 15 UNIDADES"
         />

@@ -52,6 +52,7 @@
     right: -15px;
     top: -15px;
     width: 3em;
+    filter: drop-shadow(-2px 3px 1px #0000001a);
 }
 
 .masses__image2 {

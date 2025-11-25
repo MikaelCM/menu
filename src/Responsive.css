@@ -14,9 +14,32 @@
 
 @media (min-width: 768px) {
 
+    /*
+
+    Division.jsx
+
+    */
+    .division {
+        border: 5px solid #000;
+        margin: 0;
+    }
+
+
+    /*
+
+    App.jsx
+
+    */
+    .menu__title {
+        background-color: var(--titulosFundo);
+        color: var(--titulos);
+        font-size: 1.6em;
+    }
+
+
     /* 
     
-    BOLOSDECOR.JSX 
+    BolosDecor.jsx
     
     */
     .card__header h2 {
@@ -54,7 +77,7 @@
 
     /* 
     
-    MASSES.JSX 
+    Masses.jsx 
     
     */
     .massas__title {
@@ -68,33 +91,35 @@
     }
 
     .flavours__container {
-        margin: 50px 20% 30px;
+        margin: 50px auto 30px;
+        width: 19em;
     }
 
 
     /* 
     
-    RECHEIOS.JSX 
+    Recheios.jsx 
     
     */
     .recheios__title {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     .recheios__container {
-        margin: 50px 25% 50px;
+        margin: 50px auto 50px;
+        width: 25em;
     }
 
 
     /* 
     
-    CANDIES.JSX 
+    Candies.jsx
     
     */
     .candies__header h2 {
         font-size: 2em;
     }
-    
+
     .candies__header span {
         font-size: 0.8em;
         margin-bottom: 3px;
@@ -134,7 +159,7 @@
         width: 16em !important;
         margin: 0 !important;
     }
-    
+
     .candies__image2 {
         display: none;
     }
@@ -150,7 +175,7 @@
     .candies__price {
         text-align: center;
     }
-    
+
     .docinhos-mixer__cont {
         width: clamp(4.5em, 10vw, 6em);
     }
@@ -159,6 +184,200 @@
         margin: 0 auto 30px;
         height: 250px;
         font-size: clamp(1em, 2.3vw, 1.2em);
+    }
+
+
+    /*
+
+    PartyCandies.jsx
+
+    */
+    .partyCand-head__container h2 {
+        font-size: 1.9em;
+    }
+
+    .partyCand-head__container span {
+        font-size: 0.85em;
+    }
+
+    .partyCand__triangle {
+        border-top: 2em solid transparent;
+        border-bottom: 2em solid transparent;
+        border-left: 2em solid var(--titulosFundo);
+    }
+
+    #partyCand__cont {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .partyCand-h3__cont {
+        position: absolute;
+        top: -50px;
+        left: 300px;
+    }
+
+    .partyCand-h3__cont h3 {
+        font-size: 2.7em;
+        margin: -4px 0;
+    }
+
+    #main-figure {
+        width: 16em;
+        padding: 6px 6px 20px;
+    }
+
+    .partyCand__fig2 {
+        bottom: 60px;
+        left: -20px;
+        width: 3.8em;
+    }
+
+    .partyCand__fig2-chocolate {
+        left: -10px !important;
+        bottom: 80px !important;
+        width: 4em;
+    }
+
+    .partyCand__table {
+        border-radius: 45px;
+        margin: 0 2% 40px;
+        width: 50%;
+    }
+
+
+    /*
+
+    PartyKit.jsx
+
+    */
+    .partyKit__header h2 {
+        font-size: 2em;
+    }
+
+    .partyKit__triangle {
+        border-top: 1.6em solid transparent;
+        border-left: 1.6em solid var(--titulosFundo);
+        border-bottom: 1.6em solid transparent;
+    }
+
+    .TopInformations__cont {
+        max-width: 370px;
+    }
+
+    .TI,
+    .TI2 {
+        font-size: clamp(0.95em, 1.8vw, 1em);
+    }
+
+    .partyKit__h3 {
+        font-size: 2.5em;
+    }
+
+    .partyKit__compononents {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .partyKit__list-price-image__cont {
+        width: 70%;
+    }
+
+
+    .partyKit__list li {
+        font-size: 1.25em;
+    }
+
+    .partyKit__price {
+        font-size: 1.1em;
+    }
+
+
+    /*
+
+    Additional.jsx
+
+    */
+    .additional__header {
+        display: flex;
+        color: var(--titulos);
+    }
+
+    .additional__h2 {
+        background-color: var(--titulosFundo);
+        display: flex;
+        align-items: center;
+        padding: 5px 15px 5px 20px;
+        font-size: 1.2em;
+        font-family: "Emilys Candy", serif;
+        width: min-content;
+    }
+
+    .additional__h2 h2 {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    .additional__triangle {
+        border-top: 2.5em transparent solid;
+        border-left: 2.5em var(--titulosFundo) solid;
+        border-bottom: 2.5em transparent solid;
+    }
+
+    .additional__block {
+        background-color: var(--cor_principal);
+        position: relative;
+        margin: 20px auto 40px;
+        width: 30em;
+        color: var(--texto_marrom);
+        font-weight: 700;
+        border-radius: 5px;
+        box-shadow: 0 4px 2px #00000034;
+    }
+
+    .addit-block-fig1,
+    .addit-block-fig2 {
+        position: absolute;
+        width: clamp(2.8em, 14.2vw, 3.2em);
+    }
+
+    .addit-block-fig1 {
+        bottom: -15px;
+        left: -30px;
+        filter: drop-shadow(1px -2px 2px #00000021);
+    }
+
+    .addit-block-fig2 {
+        top: -22px;
+        right: -13px;
+        filter: drop-shadow(-1px 5px 2px #00000021);
+    }
+
+    .addit-block-fig1 img,
+    .addit-block-fig2 img {
+        width: 100%;
+    }
+
+    .addit__ul {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.2em;
+    }
+
+    .addit__ul li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .addit__heart {
+        font-size: 0.5em;
     }
 
 }

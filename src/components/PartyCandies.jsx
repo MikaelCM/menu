@@ -1,6 +1,6 @@
 import './PartyCandies.css'
 
-const PartyCandies = ({Title, partyCand__h3, minimumText ,partyCand__caption, mainFig, partyCandMainFigStyle, textoAlt,  partyCandies, partyCand__illuFig1, partyCand__illuFig1_style, partyCand__illuFig2, partyCand_illuFig2_style}) => {
+const PartyCandies = ({ Title, partyCand__h3, minimumText ,partyCand__caption, mainFig, partyCandMainFigStyle, textoAlt,  partyCandies, partyCand__illuFig1, partyCand__illuFig1_style, partyCand__illuFig2, partyCand_illuFig2_style, partyCandImg2Respo}) => {
 
     // Se a lista tiver mais de um tipo de doce, imprime uma lista desses doces, senão, retorna o array normal de doces
     const isCandyList = (candyOfCandiesType) => {
@@ -51,11 +51,13 @@ const PartyCandies = ({Title, partyCand__h3, minimumText ,partyCand__caption, ma
 
                 {mainFig && (
                     <div id='main-figure' style={partyCandMainFigStyle}>
+                        
                         <img src={mainFig} alt={textoAlt}/>
 
                         <div className='partyCand__fig1' style={partyCand__illuFig1_style}>
                             <img src={partyCand__illuFig1} alt="" />
                         </div>
+
                     </div>
                 )}
                 
@@ -99,7 +101,7 @@ const PartyCandies = ({Title, partyCand__h3, minimumText ,partyCand__caption, ma
                 </tbody>
             </table>
 
-            <div className='partyCand__fig2' style={partyCand_illuFig2_style}>
+            <div className={partyCandImg2Respo} style={partyCand_illuFig2_style}>
                 <img src={partyCand__illuFig2} alt="" />
             </div>
 
