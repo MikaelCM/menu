@@ -37,6 +37,7 @@ export const EspImage1DivStyle = {
     width: "clamp(9em, 45vw, 10em)",
     margin: "-30px auto",
     padding: 0,
+    filter: "drop-shadow(0 3px 5px #00000094)",
 }
 
 export const EspImage2DivStyle = {

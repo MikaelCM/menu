@@ -436,7 +436,13 @@ function App() {
     </main>
 
     <footer>
-      
+      <div className='footer__h1'>
+        <h1>&copy;LA DOLCE DINHA</h1>
+      </div>
+
+      <div className='footer__p'>
+        <p>Website by Mikael Mendes</p>
+      </div>
     </footer>
     </>
   )

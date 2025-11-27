@@ -13,6 +13,20 @@
 }
 
 @media (min-width: 768px) {
+    
+    /*
+
+    Header.jsx
+
+    */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 9em;
+        margin: 30px 0 40px;
+    }
+
 
     /*
 
@@ -31,17 +45,19 @@
 
     */
     .menu__title {
-        background-color: var(--titulosFundo);
-        color: var(--titulos);
-        font-size: 1.9em;
+        font-size: clamp(1.9em, 5vw, 2.8em);
     }
     
+    .title__span {
+        bottom: 10px;
+    }
+    
+    .links_paragraph-container {
+        font-size: 1.1em;
+    }
+
     .link_whatsapp, .link_instagram {
-        background-color: #ffc1cd;
-        border-radius: 30px;
         font-size: 1.6em;
-        padding: 12px 2.6em;
-        transition: 0.1s ease-out;
     }
 
 
@@ -61,25 +77,36 @@
     }
 
     .cake__container {
+        margin: 30px 0;
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
     .cake__image {
-        width: 17em;
+        width: 22em;
+        max-width: 22em;
         height: 20em;
-        padding: 4px 4px 15px;
-        margin: 30px auto 0 5%;
+        margin: 30px 35px 0 35px;
+    }
+
+    .p-table-img__cont {
+        width: 80%;
     }
 
     .cake-informations p {
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .bolos__table {
-        margin: 20px 20px 30px 0;
-        width: 20em;
+        width: 90%;
+    }
+
+    .bolos__td {
+        padding: 13px 20px;
+    }
+    
+    .bolosDecor__img {
+        top: 2.8em;
     }
 
 
@@ -238,7 +265,7 @@
     }
 
     .partyCand__fig2 {
-        bottom: 60px;
+        bottom: 80px;
         left: -20px;
         width: 3.8em;
     }
@@ -286,7 +313,13 @@
 
     .partyKit__compononents {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .partyKit__compononents > :last-child {
+        grid-column: 1/-1;
+        justify-self: center;
+        width: 50%;
     }
 
     .partyKit__list-price-image__cont {
@@ -308,24 +341,8 @@
     Additional.jsx
 
     */
-    .additional__header {
-        display: flex;
-        color: var(--titulos);
-    }
-
     .additional__h2 {
-        background-color: var(--titulosFundo);
-        display: flex;
-        align-items: center;
-        padding: 5px 15px 5px 20px;
         font-size: 1.2em;
-        font-family: "Emilys Candy", serif;
-        width: min-content;
-    }
-
-    .additional__h2 h2 {
-        margin: 0;
-        font-weight: 400;
     }
 
     .additional__triangle {
@@ -335,57 +352,115 @@
     }
 
     .additional__block {
-        background-color: var(--cor_principal);
-        position: relative;
         margin: 20px auto 40px;
         width: 30em;
-        color: var(--texto_marrom);
-        font-weight: 700;
-        border-radius: 5px;
-        box-shadow: 0 4px 2px #00000034;
-    }
-
-    .addit-block-fig1,
-    .addit-block-fig2 {
-        position: absolute;
-        width: clamp(2.8em, 14.2vw, 3.2em);
     }
 
     .addit-block-fig1 {
         bottom: -15px;
         left: -30px;
-        filter: drop-shadow(1px -2px 2px #00000021);
-    }
-
-    .addit-block-fig2 {
-        top: -22px;
-        right: -13px;
-        filter: drop-shadow(-1px 5px 2px #00000021);
-    }
-
-    .addit-block-fig1 img,
-    .addit-block-fig2 img {
-        width: 100%;
     }
 
     .addit__ul {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
         font-size: 1.2em;
     }
 
     .addit__ul li {
-        display: flex;
-        align-items: center;
-        gap: 5px;
         width: 100%;
     }
 
-    .addit__heart {
-        font-size: 0.5em;
+
+    /*
+
+    footer
+
+    */
+    footer h1 {
+        font-size: clamp(1.9em, 4vw, 2.1em);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    /*
+
+    Header.jsx
+
+    */
+    .logo {
+        width: 8.3em;
     }
 
+
+    /*
+
+    App.jsx
+
+    */
+    .menu__title {
+        font-size: 2.1em;
+    }
+    
+    .mixer_image {
+        width: 28em;
+    }
+
+
+    /* 
+    
+    BolosDecor.jsx
+    
+    */
+    .cake__image {
+        max-width: none;
+        height: 24em;
+    }
+
+    .bolos__td {
+        padding: 18px 20px;
+    }
+
+    .bolosDecor__img {
+        top: 2.8em;
+        right: 3.5em;
+    }
+
+
+    /*
+
+    PartyCandies.jsx
+
+    */
+    .partyCand-head__container h2 {
+        padding-left: 20px;
+    }
+
+    .partyCand-head__container span {
+        font-size: 0.85em;
+    }
+
+    #main-figure {
+        width: 20em;
+    }
+
+    .partyCand__fig2 {
+        bottom: 60px;
+        left: 33px;
+        width: 3.8em;
+    }
+
+    .partyCand__fig2-chocolate {
+        left: 45px !important;
+        bottom: 100px !important;
+        width: 4em;
+    }
+
+    .partyCand__table {
+        margin: 0 5% 40px;
+    }
+
+    .partyCand__td {
+        padding: 25px 20px;
+        font-size: 1.2em;
+    }
 }
