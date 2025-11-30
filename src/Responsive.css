@@ -425,6 +425,18 @@
         right: 3.5em;
     }
 
+    
+    /* 
+
+    Candies.jsx
+
+    */
+    .candyList {
+        font-size: 1.15em;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
 
     /*
 
