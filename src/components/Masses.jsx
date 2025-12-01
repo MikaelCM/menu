@@ -24,7 +24,7 @@ const Massas = ({ items, massesFigure, massesFigure2, fade }) => {
         </div>
 
         <div className='masses__fixed-image'>
-          <img src="./outline-of-a-cake.png" alt="Contorno de um bolo" />
+          <img src="./outline-of-a-cake.png" alt="" />
         </div>
 
         <ul className='flavours'>

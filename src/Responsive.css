@@ -56,8 +56,16 @@
         font-size: 1.1em;
     }
 
-    .link_whatsapp, .link_instagram {
+    .link_whatsapp a, .link_instagram a {
         font-size: 1.6em;
+    }
+
+    .links_image {
+        width: 6.8em;
+        position: relative;
+        bottom: 135px;
+        right: 112px;
+        pointer-events: none;
     }
 
 
@@ -168,7 +176,7 @@
 
     #doces__h3 {
         font-size: 2.3em;
-        margin-left: 400px;
+        margin-left: 52%;
     }
 
     .candyList__container {
@@ -182,12 +190,13 @@
     .tradImg1Respo {
         width: 19em !important;
         max-width: 230px;
-        margin: 0 0 20px !important;
+        margin: 0 0 20px 10px !important;
     }
 
     .espImg1Respo {
         width: 25em !important;
         max-width: 260px;
+        margin: 0 !important;
     }
 
     .persoImg1Respo {
@@ -203,8 +212,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: fit-content;
-        margin: 0;
-        margin-bottom: 15px;
+        column-gap: 30px;
     }
 
     .candies__price {
@@ -212,7 +220,7 @@
     }
 
     .docinhos-mixer__cont {
-        width: clamp(4.5em, 10vw, 6em);
+        width: clamp(4.5em, 9vw, 6.3em);
     }
 
     .docinhos__table {
@@ -265,7 +273,7 @@
     }
 
     .partyCand__fig2 {
-        bottom: 80px;
+        bottom: 65px;
         left: -20px;
         width: 3.8em;
     }
@@ -425,6 +433,11 @@
         right: 3.5em;
     }
 
+    .bolos__td {
+        padding: 13px 20px;
+        font-size: 1.15em;
+    }
+
     
     /* 
 
@@ -432,9 +445,10 @@
 
     */
     .candyList {
-        font-size: 1.15em;
+        font-size: clamp(1.1em, 1.7vw, 1.2em);
         margin: 0 auto;
         margin-bottom: 15px;
+        column-gap: 50px;
     }
 
 
@@ -456,19 +470,20 @@
     }
 
     .partyCand__fig2 {
-        bottom: 60px;
-        left: 33px;
-        width: 3.8em;
+        bottom: 45px;
+        left: 30px;
+        width: clamp(3.8em, 5vw, 4.4em);
     }
 
     .partyCand__fig2-chocolate {
-        left: 45px !important;
-        bottom: 100px !important;
-        width: 4em;
+        left: 33px !important;
+        bottom: 90px !important;
+        width: clamp(3.9em, 8vw, 4.4em);
     }
 
     .partyCand__table {
         margin: 0 5% 40px;
+        max-width: 715px;
     }
 
     .partyCand__td {

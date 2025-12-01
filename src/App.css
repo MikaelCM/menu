@@ -31,26 +31,26 @@ MENU
     align-items: center;
 }
 
-.link_whatsapp, .link_instagram {
+.link_whatsapp a, .link_instagram a {
     background-color: #ffc1cd;
     border-radius: 30px;
-    font-size: clamp(1.25em, 5vw, 1.4em);
+    font-size: clamp(1.25em, 5vw, 1.35em);
     padding: 12px 2.6em;
     transition: 0.1s ease-out;
 }
 
-.link_instagram:hover, .link_whatsapp:hover {
+.link_instagram a:hover, .link_whatsapp a:hover {
     background-color: #BF979F;
 }
 
 .link_whatsapp {
-    margin-bottom: 10px;
+    margin: 10px 0 34px;
 }
 
 .links_image {
     width: 6em;
     position: relative;
-    bottom: 130px;
+    bottom: 120px;
     right: 95px;
     pointer-events: none;
 }

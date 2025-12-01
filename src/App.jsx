@@ -73,13 +73,13 @@ function App() {
           </div>
 
           <div className="links_image">
-            <img src="./materials.png" alt="Ilustração de materiais de confeitaria"/>
+            <img src="./materials.png" alt=""/>
           </div>
         </div>
 
         <div className='mixer_words_container'>
           <div className="mixer_image">
-            <img src="./mixer.png" alt="Ilustração de um mixer"/>
+            <img src="./mixer.png" alt=""/>
           </div>
 
           <div className='mixer_paragraph'>

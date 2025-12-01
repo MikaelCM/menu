@@ -67,7 +67,6 @@
 .bolos__table {
     background-color: var(--tabelas);
     font-size: clamp(0.95em, 4.5vw, 1.1em);
-    font-weight: 700;
     margin: 20px 5% 30px;
     color: var(--textos_tabela);
     border-collapse: collapse;
