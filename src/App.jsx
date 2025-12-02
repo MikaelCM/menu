@@ -1,7 +1,6 @@
 // Bibliotecas
 import { useEffect } from 'react'
 import AOS from "aos";
-import "aos/dist/aos.css";
 
 // Componentes
 import BolosDecor from './components/BolosDecor';
