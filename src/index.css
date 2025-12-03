@@ -15,7 +15,6 @@ body, html {
     margin: 0;
     box-sizing: border-box;
     min-height: 100dvh;
-    color-scheme: only light;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
