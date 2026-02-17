@@ -1,11 +1,12 @@
 // KIT FESTA
 export const kit1 = [
-    {id: 0, quant: 1, nome: "Bento Cake"},
-    {id: 1, quant: 10, nome: "Docinhos"},
-    {id: 2, quant: 20, nome: "Salgadinhos"},
+    {id: 0, nome: "Bolo de 1kg"},
+    {id: 1, nome: "Topper simples"},
+    {id: 2, quant: 30, nome: "Docinhos"},
+    {id: 3, quant: 6, nome: "Cupcakes recheados e no tema"},
 ];
 
-export const kit1Preco = "100,00";
+export const kit1Preco = "180,00";
 
 export const fig1PartyKitStyle = {
     top: "-45px",
@@ -15,12 +16,13 @@ export const fig1PartyKitStyle = {
 
 
 export const kit2 = [
-    {id: 0, quant: 1, nome: "Bolo 1kg"},
-    {id: 1, quant: 30, nome: "Docinhos"},
-    {id: 2, quant: 50, nome: "Salgadinhos"},
+    {id: 0, nome: "Bolo de 1,5kg"},
+    {id: 1, nome: "Topper simples"},
+    {id: 2, quant: 40, nome: "Docinhos tradicionais"},
+    {id: 3, quant: 6, nome: "Cupcakes recheados e no tema"},
 ];
 
-export const kit2Preco = "170,00"
+export const kit2Preco = "230,00"
 
 export const fig2PartyKitStyle = {
     top: "-25px",
@@ -30,12 +32,13 @@ export const fig2PartyKitStyle = {
 
 
 export const kit3 = [
-    {id: 0, quant: 1, nome: "Bolo 1,5kg"},
-    {id: 1, quant: 50, nome: "Docinhos"},
-    {id: 2, quant: 70, nome: "Salgadinhos"},
+    {id: 0, nome: "Bolo de 2kg"},
+    {id: 1, nome: "Topper simples"},
+    {id: 2, quant: 50, nome: "Docinhos tradicionais"},
+    {id: 3, quant: 8, nome: "Cupcakes recheados e no tema"},
 ];
 
-export const kit3Preco = "250,00";
+export const kit3Preco = "310,00";
 
 export const fig3PartyKitStyle = {
     top: "-25px",
@@ -44,7 +47,7 @@ export const fig3PartyKitStyle = {
     width: "clamp(3em, 15vw, 3.5em)"
 };
 
-
+// A cliente pediu para retirar os kits abaixo, porém vou manter aqui no código apenas caso eu precise reutilizar as figuras com novas informações.
 export const kit4 = [
     {id: 0, quant: 1, nome: "Bolo de 2kg"},
     {id: 1, quant: 70, nome: "Docinhos"},
