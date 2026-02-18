@@ -273,7 +273,7 @@
     }
 
     .partyCand__fig2 {
-        bottom: 65px;
+        bottom: 82px;
         left: -20px;
         width: 3.8em;
     }
@@ -470,7 +470,7 @@
     }
 
     .partyCand__fig2 {
-        bottom: 45px;
+        bottom: 80px;
         left: 30px;
         width: clamp(3.8em, 5vw, 4.4em);
     }

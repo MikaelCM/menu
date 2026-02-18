@@ -1,9 +1,8 @@
 // DOCES DE FESTA
 export const miniCupcakes = [
-    {id: 0, cakeType: "Mini Cupcake", price: "R$3,50"},
-    {id: 1, cakeType: "Mini Cupcake personalizado 2D", price: "R$6,00"},
-    {id: 2, cakeType: "Cupcake", price: "R$7,00"},
-    {id: 3, cakeType: "Cupcake personalizado 2D", price: "R$10,00"},
+    {id: 0, cakeType: "Cupcake", price: "R$6,00 a uni."},
+    {id: 1, cakeType: "Cupcake 2D", price: "R$9,00"},
+    {id: 2, cakeType: "Cupcake 3D", price: "R$14,00"},
 ];
 
 

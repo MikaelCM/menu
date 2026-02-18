@@ -47,7 +47,7 @@ export const fig3PartyKitStyle = {
     width: "clamp(3em, 15vw, 3.5em)"
 };
 
-// A cliente pediu para retirar os kits abaixo, porém vou manter aqui no código apenas caso eu precise reutilizar as figuras com novas informações.
+// A cliente pediu para retirar os kits abaixo, porém vou manter aqui no código apenas para caso eu precise reutilizar as figuras com novas informações.
 export const kit4 = [
     {id: 0, quant: 1, nome: "Bolo de 2kg"},
     {id: 1, quant: 70, nome: "Docinhos"},
