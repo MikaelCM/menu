@@ -10,10 +10,12 @@
         height: 17em;
         padding: 4px 4px 15px;
     }
+
+
 }
 
 @media (min-width: 768px) {
-    
+
     /*
 
     Header.jsx
@@ -47,16 +49,17 @@
     .menu__title {
         font-size: clamp(1.9em, 5vw, 2.8em);
     }
-    
+
     .title__span {
         bottom: 10px;
     }
-    
+
     .links_paragraph-container {
         font-size: 1.1em;
     }
 
-    .link_whatsapp a, .link_instagram a {
+    .link_whatsapp a,
+    .link_instagram a {
         font-size: 1.6em;
     }
 
@@ -112,7 +115,7 @@
     .bolos__td {
         padding: 13px 20px;
     }
-    
+
     .bolosDecor__img {
         top: 2.8em;
     }
@@ -319,12 +322,29 @@
         font-size: 2.5em;
     }
 
+    .partyKitPhotos__carousel {
+        margin: 60px auto 0;
+        width: 85%;
+    }
+
+    .partyKit__photos {
+        padding: 0 0.6em 10px 0;
+        animation: slide 9s infinite linear;
+    }
+
+    .partyKit__photos li {
+        height: 16em;
+        flex: 0 0 14em;
+        width: 14em;
+        padding-right: 7em;
+    }
+
     .partyKit__compononents {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .partyKit__compononents > :last-child {
+    .partyKit__compononents> :last-child {
         grid-column: 1/-1;
         justify-self: center;
         width: 50%;
@@ -389,7 +409,7 @@
 }
 
 @media (min-width: 1024px) {
-    
+
     /*
 
     Header.jsx
@@ -408,7 +428,7 @@
     .menu__title {
         font-size: 2.1em;
     }
-    
+
     .mixer_image {
         width: 28em;
     }
@@ -438,7 +458,7 @@
         font-size: 1.15em;
     }
 
-    
+
     /* 
 
     Candies.jsx
@@ -489,5 +509,27 @@
     .partyCand__td {
         padding: 25px 20px;
         font-size: 1.2em;
+    }
+
+    .partyKitPhotos__carousel {
+        margin: 60px auto 0;
+        width: 85%;
+    }
+
+    .partyKit__photos {
+        padding: 0 0.6em 10px 0;
+        animation: slide 14s infinite linear;
+    }
+
+    .partyKit__photos li {
+        height: 21em;
+        flex: 0 0 18em;
+        width: 18em;
+        padding-right: 15em;
+        padding-bottom: 10px;
+    }
+
+    .partyKit__photos img {
+        padding: 10px 10px 25px;
     }
 }

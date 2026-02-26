@@ -1,4 +1,11 @@
 // KIT FESTA
+
+export const kitPhotos = [
+    {id: 0, image: './partyKit-cupcakes.jpeg', alt: 'Cupcakes'},
+    {id: 1, image: './partyKit-cake.jpeg', alt: 'Bolo com tema personalizado'},
+    {id: 2, image: './partyKit-brigadeiros.jpeg', alt: 'Brigadeiros brancos e marrons'},
+];
+
 export const kit1 = [
     {id: 0, nome: "Bolo de 1kg"},
     {id: 1, nome: "Topper simples"},

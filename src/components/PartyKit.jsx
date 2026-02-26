@@ -1,6 +1,7 @@
+import { kitPhotos } from '../data/kitFesta'
 import './PartyKit.css'
 
-const PartyKit = ({ margin, title, topInformations1, topInformations2, kitTitle, kitList, kitPreco, fig, figStyle }) => {
+const PartyKit = ({ margin, title, topInformations1, topInformations2, partyKitPhotos, kitTitle, kitList, kitPreco, fig, figStyle }) => {
   return (
     <div className="partyKit__card">
       {title &&
@@ -35,6 +36,28 @@ const PartyKit = ({ margin, title, topInformations1, topInformations2, kitTitle,
           <div className='TI2'>
             <p>{topInformations2}</p>
           </div>
+
+        </div>
+      )}
+
+      {partyKitPhotos && (
+        <div className='partyKitPhotos__carousel'>
+
+          <ul className='partyKit__photos'>
+            {kitPhotos.map(photo => (
+              <li key={photo.id}>
+                <img src={photo.image} alt={photo.alt} />
+              </li>
+            ))}
+          </ul>
+
+          <ul className='partyKit__photos' aria-hidden='true'>
+            {kitPhotos.map(photo => (
+              <li key={photo.id}>
+                <img src={photo.image} alt={photo.alt} />
+              </li>
+            ))}
+          </ul>
 
         </div>
       )}

@@ -26,7 +26,7 @@ import { recheiosTradicionais, recheiosEspeciais, blueCupcake, berliner, recheio
 
 import { miniCupcakes, miniBrownie, mainBrownieStyle, party_illuFig1_style, party_illuFig2_style } from './data/docesDeFesta'
 
-import { kit1, kit1Preco, fig1PartyKitStyle, kit2, kit2Preco, fig2PartyKitStyle, kit3, kit3Preco, fig3PartyKitStyle } from './data/kitFesta'
+import { kitPhotos, kit1, kit1Preco, fig1PartyKitStyle, kit2, kit2Preco, fig2PartyKitStyle, kit3, kit3Preco, fig3PartyKitStyle } from './data/kitFesta'
 
 import { additionalFirst, additionalSecond, additFig3Style, additFig4Style } from './data/adicionais'
 
@@ -330,6 +330,8 @@ function App() {
             title="KIT FESTA"
 
             topInformations1="BOLO E DOCINHOS ESPECIAIS NÃO SÃO INCLUSOS NO VALOR."
+
+            partyKitPhotos={kitPhotos}
           />
 
           <div className='partyKit__compononents'> {/* usar essa div para fazer um grid em telas maiores que de um celular */}
